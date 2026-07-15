@@ -3,9 +3,9 @@
 	"tag": "About",
 	"icon": "user",
 	"heading": {
-		"prefix": "Every great design begin with an even ",
-		"highlight": "better story",
+		"prefix": "Great products start with a solid ",
+		"highlight": "foundation",
 		"suffix": ""
 	},
-	"paragraph": "Since beginning my journey as a freelance designer nearly 6 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually improving my chops one design problem at a time."
+	"paragraph": "Over the past 8+ years, I've grown from a Java developer into a Front-end Team Leader and UI/UX Designer, leading teams at Infostatus and Enouvo IT Solution while shipping products across Angular, React, and Tailwind CSS. I care as much about clean, maintainable code as I do about the interfaces people actually touch — which is why I sit comfortably between engineering and design. Based in Da Nang, Vietnam, I enjoy mentoring teams and turning ambiguous problems into products that just work."
 }

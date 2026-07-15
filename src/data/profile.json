@@ -1,17 +1,15 @@
 {
-	"name": "Drake",
-	"initial": "D",
-	"role": "Framer Designer & Developer",
-	"avatar": "https://picsum.photos/seed/drake-portfolio/400/500",
-	"email": "hello@drake.design",
-	"location": "Base in Los Angeles, CA",
-	"copyright": "© 2022 Drake. All Rights Reserved",
+	"name": "Cam Huynh Phan",
+	"initial": "C",
+	"role": "Developer & UI/UX Designer",
+	"avatar": "https://picsum.photos/seed/cam-huynh-phan/400/500",
+	"email": "cam.phan12993@gmail.com",
+	"location": "Base in Da Nang, Vietnam",
+	"copyright": "© 2026 Cam Huynh Phan. All Rights Reserved",
 	"hireMeLabel": "Hire Me!",
-	"hireMeHref": "#contact",
+	"hireMeHref": "mailto:cam.phan12993@gmail.com",
 	"social": [
-		{ "icon": "twitter", "label": "Twitter", "href": "#" },
-		{ "icon": "dribbble", "label": "Dribbble", "href": "#" },
-		{ "icon": "instagram", "label": "Instagram", "href": "#" },
-		{ "icon": "github", "label": "GitHub", "href": "#" }
+		{ "icon": "linkedin", "label": "LinkedIn", "href": "https://www.linkedin.com/in/camphan12993" },
+		{ "icon": "github", "label": "GitHub", "href": "https://github.com/camphan12993" }
 	]
 }

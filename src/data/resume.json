@@ -9,24 +9,28 @@
 	},
 	"timeline": [
 		{
-			"period": "2020 - Present",
+			"period": "2021 - 2026",
 			"items": [
-				{ "title": "Framer Designer & Developer", "org": "Snowflake Agency" },
-				{ "title": "Front-End WordPress Developer", "org": "Envato Market" }
+				{ "title": "Front-end Team Leader", "org": "Infostatus" },
+				{ "title": "UI/UX Designer", "org": "Infostatus" }
 			]
 		},
 		{
-			"period": "2015 - 2019",
+			"period": "2017 - 2020",
 			"items": [
-				{ "title": "Webflow Developer & Co-Founder", "org": "Navigation Studio" },
-				{ "title": "Web Designer", "org": "Freelance" },
-				{ "title": "Leader Team of Marketing", "org": "Anti Marketing Agency" }
+				{ "title": "Angular Team Leader", "org": "Enouvo IT Solution" }
 			]
 		},
 		{
-			"period": "2010 - 2015",
+			"period": "2016 - 2017",
 			"items": [
-				{ "title": "Bachelor Degree of Information Technology", "org": "US MIT University" }
+				{ "title": "Java Developer", "org": "FPT Software Da Nang" }
+			]
+		},
+		{
+			"period": "2011 - 2016",
+			"items": [
+				{ "title": "Bachelor of Information Technology", "org": "Da Nang University of Technology" }
 			]
 		}
 	]

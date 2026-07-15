@@ -10,28 +10,27 @@
 	"timeline": [
 		{
 			"period": "2021 - 2026",
-			"items": [
-				{ "title": "Front-end Team Leader", "org": "Infostatus" },
-				{ "title": "UI/UX Designer", "org": "Infostatus" }
-			]
+			"org": "Infostatus",
+			"roles": ["Front-end Team Leader", "UI/UX Designer"],
+			"description": "Led the front-end team building web applications with Angular and React, while also designing user interfaces in Figma — bridging engineering and design across projects."
 		},
 		{
 			"period": "2017 - 2020",
-			"items": [
-				{ "title": "Angular Team Leader", "org": "Enouvo IT Solution" }
-			]
+			"org": "Enouvo IT Solution",
+			"roles": ["Angular Team Leader"],
+			"description": "Led a team of Angular developers delivering enterprise web applications, owning technical decisions and code quality."
 		},
 		{
 			"period": "2016 - 2017",
-			"items": [
-				{ "title": "Java Developer", "org": "FPT Software Da Nang" }
-			]
+			"org": "FPT Software Da Nang",
+			"roles": ["Java Developer"],
+			"description": "Developed and maintained backend services in Java as part of a software outsourcing team."
 		},
 		{
 			"period": "2011 - 2016",
-			"items": [
-				{ "title": "Bachelor of Information Technology", "org": "Da Nang University of Technology" }
-			]
+			"org": "Da Nang University of Technology",
+			"roles": ["Bachelor of Information Technology"],
+			"description": "Focused on software engineering and web development fundamentals."
 		}
 	]
 }

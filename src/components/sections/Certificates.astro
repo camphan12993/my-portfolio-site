@@ -1,0 +1,37 @@
+---
+import SectionHeading from '../SectionHeading.astro';
+import Icon from '../Icon.astro';
+import certificates from '../../data/certificates.json';
+---
+
+<section id={certificates.id} class="border-b border-line px-8 py-20 sm:px-12">
+	<SectionHeading tag={certificates.tag} icon={certificates.icon} heading={certificates.heading} />
+
+	<div class="mt-10 grid gap-4 sm:grid-cols-2">
+		{
+			certificates.items.map((item, i) => {
+				const Tag = item.url ? 'a' : 'div';
+				return (
+					<Tag
+						href={item.url || undefined}
+						target={item.url ? '_blank' : undefined}
+						rel={item.url ? 'noreferrer' : undefined}
+						class="group flex items-start justify-between gap-3 rounded-2xl border border-line bg-panel p-6"
+						data-aos="fade-up"
+						data-aos-delay={i * 80}
+					>
+						<div>
+							<p class="font-medium text-ink">{item.name}</p>
+							<p class="mt-1 text-sm text-muted">{item.issuer}</p>
+							<p class="mt-1 text-xs text-faint">{item.date}</p>
+						</div>
+						<Icon
+							name={item.url ? 'external-link' : 'award'}
+							class="h-5 w-5 shrink-0 text-accent transition group-hover:opacity-80"
+						/>
+					</Tag>
+				);
+			})
+		}
+	</div>
+</section>

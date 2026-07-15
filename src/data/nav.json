@@ -3,7 +3,7 @@
 		{ "icon": "home", "label": "Introduce", "href": "#introduce" },
 		{ "icon": "user", "label": "About", "href": "#about" },
 		{ "icon": "briefcase", "label": "Resume", "href": "#resume" },
-		{ "icon": "list", "label": "Services", "href": "#services" },
+		{ "icon": "award", "label": "Certificates", "href": "#certificates" },
 		{ "icon": "hexagon", "label": "Skills", "href": "#skills" },
 		{ "icon": "grid", "label": "Portfolio", "href": "#portfolio" }
 	]

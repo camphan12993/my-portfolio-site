@@ -10,27 +10,37 @@
 	"projects": [
 		{
 			"title": "Bureau - Architecture Studio Website",
-			"tags": ["Figma", "Framer", "WordPress"],
+			"description": "Project description goes here.",
+			"tech": ["Figma", "Framer", "WordPress"],
+			"role": "Your role on this project",
 			"image": "https://picsum.photos/seed/bureau-project/800/600"
 		},
 		{
 			"title": "Moonex WordPress Theme",
-			"tags": ["WordPress", "Laravel/PHP"],
+			"description": "Project description goes here.",
+			"tech": ["WordPress", "Laravel/PHP"],
+			"role": "Your role on this project",
 			"image": "https://picsum.photos/seed/moonex-project/800/600"
 		},
 		{
 			"title": "Taskly Dashboard",
-			"tags": ["Figma", "Webflow"],
+			"description": "Project description goes here.",
+			"tech": ["Figma", "Webflow"],
+			"role": "Your role on this project",
 			"image": "https://picsum.photos/seed/taskly-project/800/600"
 		},
 		{
 			"title": "Hinterland - Real Estate Site Redesign",
-			"tags": ["Figma", "React"],
+			"description": "Project description goes here.",
+			"tech": ["Figma", "React"],
+			"role": "Your role on this project",
 			"image": "https://picsum.photos/seed/hinterland-project/800/600"
 		},
 		{
 			"title": "Lewis Portfolio Framer Template",
-			"tags": ["Framer"],
+			"description": "Project description goes here.",
+			"tech": ["Framer"],
+			"role": "Your role on this project",
 			"image": "https://picsum.photos/seed/lewis-project/800/600"
 		}
 	]

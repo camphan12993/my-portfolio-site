@@ -1,0 +1,14 @@
+{
+	"id": "certificates",
+	"tag": "Certificates",
+	"icon": "award",
+	"heading": {
+		"prefix": "Certifications & ",
+		"highlight": "Achievements",
+		"suffix": ""
+	},
+	"items": [
+		{ "name": "Certificate Name", "issuer": "Issuing Organization", "date": "2024", "url": "" },
+		{ "name": "Certificate Name", "issuer": "Issuing Organization", "date": "2023", "url": "" }
+	]
+}

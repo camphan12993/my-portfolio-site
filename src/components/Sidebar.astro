@@ -10,13 +10,8 @@ import profile from "../data/profile.json";
     <div class="flex items-start justify-between gap-3">
       <div class="flex items-center gap-2">
         <span class="text-lg font-semibold text-ink">{profile.name}</span>
-        <span
-          class="flex h-5 w-5 items-center justify-center rounded-full border border-line text-[10px] text-muted"
-        >
-          {profile.initial}
-        </span>
       </div>
-      <p class="max-w-32 text-right text-xs leading-snug text-muted">
+      <p class="max-w-32 text-right text-sm leading-snug text-muted">
         {profile.role}
       </p>
     </div>

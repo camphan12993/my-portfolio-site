@@ -1,9 +1,0 @@
----
-import SectionHeading from '../SectionHeading.astro';
-import pricing from '../../data/pricing.json';
----
-
-<section id={pricing.id} class="px-8 py-20 sm:px-12">
-	<SectionHeading tag={pricing.tag} icon={pricing.icon} heading={pricing.heading} />
-	<p class="mt-6 max-w-2xl text-sm text-faint" data-aos="fade-up" data-aos-delay="120">{pricing.note}</p>
-</section>

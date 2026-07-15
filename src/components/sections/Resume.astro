@@ -1,0 +1,27 @@
+---
+import SectionHeading from '../SectionHeading.astro';
+import resume from '../../data/resume.json';
+---
+
+<section id={resume.id} class="border-b border-line px-8 py-20 sm:px-12">
+	<SectionHeading tag={resume.tag} icon={resume.icon} heading={resume.heading} />
+
+	<ol class="mt-10 space-y-10 border-l border-line pl-8">
+		{
+			resume.timeline.map((entry) => (
+				<li class="relative">
+					<span class="absolute -left-[calc(2rem+5px)] top-1.5 h-2.5 w-2.5 rounded-full bg-accent" />
+					<p class="text-xs uppercase tracking-wide text-faint">{entry.period}</p>
+					<ul class="mt-3 space-y-2">
+						{entry.items.map((item) => (
+							<li class="flex flex-wrap items-baseline gap-2">
+								<span class="font-medium text-ink">{item.title}</span>
+								<span class="text-sm text-muted">{item.org}</span>
+							</li>
+						))}
+					</ul>
+				</li>
+			))
+		}
+	</ol>
+</section>

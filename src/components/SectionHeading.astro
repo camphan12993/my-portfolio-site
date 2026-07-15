@@ -1,0 +1,37 @@
+---
+import Icon from './Icon.astro';
+
+interface Props {
+	tag: string;
+	icon: string;
+	heading: { prefix: string; highlight: string; suffix: string };
+	variant?: 'pill' | 'label';
+	as?: 'h1' | 'h2';
+}
+
+const { tag, icon, heading, variant = 'pill', as: Heading = 'h2' } = Astro.props;
+---
+
+<div class="mb-6">
+	{
+		variant === 'pill' ? (
+			<span class="inline-flex items-center gap-2 rounded-full border border-line px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-muted">
+				<Icon name={icon as any} class="h-3.5 w-3.5" />
+				{tag}
+			</span>
+		) : (
+			<span class="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-widest text-muted">
+				<span class="h-1.5 w-1.5 rounded-sm bg-accent" />
+				{tag}
+			</span>
+		)
+	}
+</div>
+<Heading
+	class:list={[
+		'font-semibold tracking-tight text-ink',
+		Heading === 'h1' ? 'text-4xl sm:text-5xl lg:text-6xl xl:text-7xl' : 'text-3xl sm:text-4xl',
+	]}
+>
+	{heading.prefix}<span class="text-accent">{heading.highlight}</span>{heading.suffix}
+</Heading>

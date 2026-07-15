@@ -1,0 +1,77 @@
+---
+import Icon from './Icon.astro';
+import nav from '../data/nav.json';
+---
+
+<aside class="hidden flex-col items-center gap-4 p-6 lg:sticky lg:top-0 lg:flex lg:h-screen lg:p-8">
+	<button
+		type="button"
+		class="flex h-9 w-9 items-center justify-center rounded-full border border-line text-muted transition hover:text-ink"
+		aria-label="Menu"
+	>
+		<Icon name="menu" class="h-4 w-4" />
+	</button>
+
+	<nav class="flex flex-col items-center gap-2 rounded-full border border-line bg-panel p-3" data-side-nav>
+		{
+			nav.items.map((item, i) => (
+				<a
+					href={item.href}
+					aria-label={item.label}
+					data-nav-link={item.href.slice(1)}
+					class:list={[
+						'flex h-10 w-10 items-center justify-center rounded-full transition',
+						i === 0 ? 'bg-accent text-accent-ink' : 'text-muted hover:text-ink',
+					]}
+				>
+					<Icon name={item.icon as any} class="h-4 w-4" />
+				</a>
+			))
+		}
+	</nav>
+</aside>
+
+<script>
+	function initSideNavScrollSpy() {
+		const nav = document.querySelector('[data-side-nav]');
+		if (!nav) return;
+
+		const links = Array.from(nav.querySelectorAll<HTMLAnchorElement>('[data-nav-link]'));
+		const sections = links
+			.map((link) => document.getElementById(link.dataset.navLink ?? ''))
+			.filter((section): section is HTMLElement => section !== null);
+
+		if (sections.length === 0) return;
+
+		const activeClasses = ['bg-accent', 'text-accent-ink'];
+		const inactiveClasses = ['text-muted', 'hover:text-ink'];
+
+		const setActive = (id: string) => {
+			for (const link of links) {
+				const isActive = link.dataset.navLink === id;
+				link.classList.remove(...activeClasses, ...inactiveClasses);
+				link.classList.add(...(isActive ? activeClasses : inactiveClasses));
+			}
+		};
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				const visible = entries
+					.filter((entry) => entry.isIntersecting)
+					.sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+				if (visible.length > 0) {
+					setActive(visible[0].target.id);
+				}
+			},
+			{ rootMargin: '-40% 0px -50% 0px', threshold: [0, 0.25, 0.5, 0.75, 1] }
+		);
+
+		for (const section of sections) {
+			observer.observe(section);
+		}
+	}
+
+	initSideNavScrollSpy();
+	document.addEventListener('astro:page-load', initSideNavScrollSpy);
+</script>

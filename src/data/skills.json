@@ -1,0 +1,18 @@
+{
+	"id": "skills",
+	"tag": "My Skill",
+	"icon": "hexagon",
+	"heading": {
+		"prefix": "My ",
+		"highlight": "Advantages",
+		"suffix": ""
+	},
+	"items": [
+		{ "name": "Figma", "percent": 92 },
+		{ "name": "Framer", "percent": 85 },
+		{ "name": "Webflow", "percent": 80 },
+		{ "name": "React", "percent": 90 },
+		{ "name": "WordPress", "percent": 86 },
+		{ "name": "Laravel/PHP", "percent": 70 }
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"name": "Drake",
+	"initial": "D",
+	"role": "Framer Designer & Developer",
+	"avatar": "https://picsum.photos/seed/drake-portfolio/400/500",
+	"email": "hello@drake.design",
+	"location": "Base in Los Angeles, CA",
+	"copyright": "© 2022 Drake. All Rights Reserved",
+	"hireMeLabel": "Hire Me!",
+	"hireMeHref": "#contact",
+	"social": [
+		{ "icon": "twitter", "label": "Twitter", "href": "#" },
+		{ "icon": "dribbble", "label": "Dribbble", "href": "#" },
+		{ "icon": "instagram", "label": "Instagram", "href": "#" },
+		{ "icon": "github", "label": "GitHub", "href": "#" }
+	]
+}

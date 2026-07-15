@@ -1,0 +1,12 @@
+---
+import Sidebar from './Sidebar.astro';
+import SideNav from './SideNav.astro';
+---
+
+<div class="lg:grid lg:grid-cols-[380px_1fr_96px] lg:items-start">
+	<Sidebar />
+	<main>
+		<slot />
+	</main>
+	<SideNav />
+</div>

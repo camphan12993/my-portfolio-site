@@ -1,0 +1,26 @@
+---
+import SectionHeading from '../SectionHeading.astro';
+import skills from '../../data/skills.json';
+---
+
+<section id={skills.id} class="border-b border-line px-8 py-20 sm:px-12">
+	<SectionHeading tag={skills.tag} icon={skills.icon} heading={skills.heading} />
+
+	<div class="mt-10 flex flex-wrap gap-6">
+		{
+			skills.items.map((item) => (
+				<div class="flex flex-col items-center gap-3">
+					<div
+						class="relative flex h-20 w-20 items-center justify-center rounded-full border border-line text-sm font-semibold text-accent"
+						style={`background: conic-gradient(var(--color-accent) ${item.percent}%, transparent ${item.percent}% 100%)`}
+					>
+						<div class="flex h-16 w-16 items-center justify-center rounded-full bg-panel">
+							{item.percent}%
+						</div>
+					</div>
+					<p class="text-xs text-muted">{item.name}</p>
+				</div>
+			))
+		}
+	</div>
+</section>

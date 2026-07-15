@@ -1,0 +1,10 @@
+---
+import brands from '../../data/brands.json';
+---
+
+<section class="border-b border-line px-8 py-12 sm:px-12">
+	<p class="text-center text-xs uppercase tracking-widest text-faint">{brands.heading}</p>
+	<div class="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
+		{brands.logos.map((logo) => <span class="text-sm font-semibold text-muted">{logo}</span>)}
+	</div>
+</section>

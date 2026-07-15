@@ -1,0 +1,37 @@
+{
+	"id": "portfolio",
+	"tag": "Portfolio",
+	"icon": "grid",
+	"heading": {
+		"prefix": "Featured ",
+		"highlight": "Projects",
+		"suffix": ""
+	},
+	"projects": [
+		{
+			"title": "Bureau - Architecture Studio Website",
+			"tags": ["Figma", "Framer", "WordPress"],
+			"image": "https://picsum.photos/seed/bureau-project/800/600"
+		},
+		{
+			"title": "Moonex WordPress Theme",
+			"tags": ["WordPress", "Laravel/PHP"],
+			"image": "https://picsum.photos/seed/moonex-project/800/600"
+		},
+		{
+			"title": "Taskly Dashboard",
+			"tags": ["Figma", "Webflow"],
+			"image": "https://picsum.photos/seed/taskly-project/800/600"
+		},
+		{
+			"title": "Hinterland - Real Estate Site Redesign",
+			"tags": ["Figma", "React"],
+			"image": "https://picsum.photos/seed/hinterland-project/800/600"
+		},
+		{
+			"title": "Lewis Portfolio Framer Template",
+			"tags": ["Framer"],
+			"image": "https://picsum.photos/seed/lewis-project/800/600"
+		}
+	]
+}

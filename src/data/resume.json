@@ -1,0 +1,33 @@
+{
+	"id": "resume",
+	"tag": "Resume",
+	"icon": "briefcase",
+	"heading": {
+		"prefix": "Education & ",
+		"highlight": "Experience",
+		"suffix": ""
+	},
+	"timeline": [
+		{
+			"period": "2020 - Present",
+			"items": [
+				{ "title": "Framer Designer & Developer", "org": "Snowflake Agency" },
+				{ "title": "Front-End WordPress Developer", "org": "Envato Market" }
+			]
+		},
+		{
+			"period": "2015 - 2019",
+			"items": [
+				{ "title": "Webflow Developer & Co-Founder", "org": "Navigation Studio" },
+				{ "title": "Web Designer", "org": "Freelance" },
+				{ "title": "Leader Team of Marketing", "org": "Anti Marketing Agency" }
+			]
+		},
+		{
+			"period": "2010 - 2015",
+			"items": [
+				{ "title": "Bachelor Degree of Information Technology", "org": "US MIT University" }
+			]
+		}
+	]
+}

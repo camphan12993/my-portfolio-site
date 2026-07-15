@@ -1,0 +1,15 @@
+{
+	"id": "introduce",
+	"tag": "Introduce",
+	"icon": "home",
+	"heading": {
+		"prefix": "Say Hi from ",
+		"highlight": "Drake",
+		"suffix": ", Framer Designer and Developer"
+	},
+	"subtitle": "I design and code beautifully simple things and i love what i do. Just simple like that!",
+	"stats": [
+		{ "value": "10+", "label": "Years of experience" },
+		{ "value": "182+", "label": "Projects completed on 15 countries" }
+	]
+}

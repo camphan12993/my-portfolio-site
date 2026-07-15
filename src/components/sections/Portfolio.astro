@@ -8,8 +8,13 @@ import portfolio from '../../data/portfolio.json';
 
 	<div class="mt-10 grid gap-6 sm:grid-cols-2">
 		{
-			portfolio.projects.map((project) => (
-				<a href="#" class="group block overflow-hidden rounded-2xl border border-line bg-panel">
+			portfolio.projects.map((project, i) => (
+				<a
+					href="#"
+					class="group block overflow-hidden rounded-2xl border border-line bg-panel"
+					data-aos="fade-up"
+					data-aos-delay={i * 100}
+				>
 					<div class="aspect-4/3 overflow-hidden">
 						<img
 							src={project.image}

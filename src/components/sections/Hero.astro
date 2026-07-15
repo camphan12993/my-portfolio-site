@@ -6,12 +6,14 @@ import hero from '../../data/hero.json';
 
 <section id={hero.id} class="relative border-b border-line px-8 py-20 sm:px-12">
 	<SectionHeading tag={hero.tag} icon={hero.icon} heading={hero.heading} as="h1" />
-	<p class="mt-6 max-w-2xl text-lg text-muted sm:text-xl">{hero.subtitle}</p>
+	<p class="mt-6 max-w-2xl text-lg text-muted sm:text-xl" data-aos="fade-up" data-aos-delay="160">
+		{hero.subtitle}
+	</p>
 
 	<div class="mt-12 flex flex-wrap gap-12">
 		{
-			hero.stats.map((stat) => (
-				<div>
+			hero.stats.map((stat, i) => (
+				<div data-aos="fade-up" data-aos-delay={240 + i * 80}>
 					<p class="text-3xl font-semibold text-accent">{stat.value}</p>
 					<p class="mt-1 max-w-40 text-xs uppercase tracking-wide text-faint">{stat.label}</p>
 				</div>
@@ -22,6 +24,8 @@ import hero from '../../data/hero.json';
 	<a
 		href="#about"
 		aria-label="Scroll to next section"
+		data-aos="fade"
+		data-aos-delay="500"
 		class="absolute right-8 bottom-10 hidden h-20 w-20 items-center justify-center rounded-full border border-line text-muted transition hover:text-accent sm:right-12 sm:flex"
 	>
 		<Icon name="arrow-down" class="h-5 w-5" />

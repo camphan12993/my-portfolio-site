@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import 'aos/dist/aos.css';
 
 interface Props {
 	title?: string;
@@ -26,4 +27,20 @@ const {
 	<body class="min-h-screen bg-canvas text-ink antialiased">
 		<slot />
 	</body>
+
+	<script>
+		import AOS from 'aos';
+
+		function initAos() {
+			AOS.init({
+				duration: 700,
+				easing: 'ease-out-cubic',
+				once: true,
+				offset: 80,
+			});
+		}
+
+		initAos();
+		document.addEventListener('astro:page-load', () => AOS.refreshHard());
+	</script>
 </html>

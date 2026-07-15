@@ -5,8 +5,6 @@
 		{ "icon": "briefcase", "label": "Resume", "href": "#resume" },
 		{ "icon": "list", "label": "Services", "href": "#services" },
 		{ "icon": "hexagon", "label": "Skills", "href": "#skills" },
-		{ "icon": "grid", "label": "Portfolio", "href": "#portfolio" },
-		{ "icon": "message-circle", "label": "Testimonial", "href": "#testimonial" },
-		{ "icon": "mail", "label": "Contact", "href": "#contact" }
+		{ "icon": "grid", "label": "Portfolio", "href": "#portfolio" }
 	]
 }

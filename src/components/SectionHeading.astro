@@ -12,7 +12,7 @@ interface Props {
 const { tag, icon, heading, variant = 'pill', as: Heading = 'h2' } = Astro.props;
 ---
 
-<div class="mb-6">
+<div class="mb-6" data-aos="fade-up">
 	{
 		variant === 'pill' ? (
 			<span class="inline-flex items-center gap-2 rounded-full border border-line px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-muted">
@@ -32,6 +32,8 @@ const { tag, icon, heading, variant = 'pill', as: Heading = 'h2' } = Astro.props
 		'font-semibold tracking-tight text-ink',
 		Heading === 'h1' ? 'text-4xl sm:text-5xl lg:text-6xl xl:text-7xl' : 'text-3xl sm:text-4xl',
 	]}
+	data-aos="fade-up"
+	data-aos-delay="80"
 >
 	{heading.prefix}<span class="text-accent">{heading.highlight}</span>{heading.suffix}
 </Heading>

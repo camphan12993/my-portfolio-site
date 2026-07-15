@@ -7,12 +7,35 @@
 		"highlight": "Advantages",
 		"suffix": ""
 	},
-	"items": [
-		{ "name": "Figma", "percent": 92 },
-		{ "name": "Framer", "percent": 85 },
-		{ "name": "Webflow", "percent": 80 },
-		{ "name": "React", "percent": 90 },
-		{ "name": "WordPress", "percent": 86 },
-		{ "name": "Laravel/PHP", "percent": 70 }
+	"groups": [
+		{
+			"label": "Coding",
+			"items": [
+				{ "name": "JavaScript / TypeScript", "percent": 92 },
+				{ "name": "React", "percent": 90 },
+				{ "name": "Astro", "percent": 85 },
+				{ "name": "Node.js", "percent": 82 },
+				{ "name": "Laravel / PHP", "percent": 70 }
+			]
+		},
+		{
+			"label": "Design",
+			"items": [
+				{ "name": "Figma", "percent": 92 },
+				{ "name": "Framer", "percent": 85 },
+				{ "name": "Webflow", "percent": 80 },
+				{ "name": "UI/UX Design", "percent": 88 }
+			]
+		},
+		{
+			"label": "Soft Skill",
+			"items": [
+				{ "name": "Communication", "percent": 90 },
+				{ "name": "Teamwork", "percent": 88 },
+				{ "name": "Problem Solving", "percent": 92 },
+				{ "name": "Time Management", "percent": 85 },
+				{ "name": "Adaptability", "percent": 87 }
+			]
+		}
 	]
 }

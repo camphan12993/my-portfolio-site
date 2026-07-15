@@ -9,8 +9,12 @@ import services from '../../data/services.json';
 
 	<div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
 		{
-			services.items.map((item) => (
-				<div class="flex items-center justify-between rounded-2xl border border-line bg-panel p-6">
+			services.items.map((item, i) => (
+				<div
+					class="flex items-center justify-between rounded-2xl border border-line bg-panel p-6"
+					data-aos="fade-up"
+					data-aos-delay={i * 80}
+				>
 					<div>
 						<p class="font-medium text-ink">{item.title}</p>
 						<p class="mt-1 text-xs text-faint">{item.meta}</p>

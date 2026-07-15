@@ -6,19 +6,34 @@ import skills from '../../data/skills.json';
 <section id={skills.id} class="border-b border-line px-8 py-20 sm:px-12">
 	<SectionHeading tag={skills.tag} icon={skills.icon} heading={skills.heading} />
 
-	<div class="mt-10 flex flex-wrap gap-6">
+	<div class="mt-10 space-y-10">
 		{
-			skills.items.map((item) => (
-				<div class="flex flex-col items-center gap-3">
-					<div
-						class="relative flex h-20 w-20 items-center justify-center rounded-full border border-line text-sm font-semibold text-accent"
-						style={`background: conic-gradient(var(--color-accent) ${item.percent}%, transparent ${item.percent}% 100%)`}
+			skills.groups.map((group, gi) => (
+				<div>
+					<p
+						class="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-widest text-muted"
+						data-aos="fade-up"
+						data-aos-delay={gi * 60}
 					>
-						<div class="flex h-16 w-16 items-center justify-center rounded-full bg-panel">
-							{item.percent}%
-						</div>
+						<span class="h-1.5 w-1.5 rounded-sm bg-accent" />
+						{group.label}
+					</p>
+
+					<div class="mt-6 flex flex-wrap gap-6">
+						{group.items.map((item, i) => (
+							<div class="flex flex-col items-center gap-3" data-aos="zoom-in" data-aos-delay={i * 60}>
+								<div
+									class="relative flex h-20 w-20 items-center justify-center rounded-full border border-line text-sm font-semibold text-accent"
+									style={`background: conic-gradient(var(--color-accent) ${item.percent}%, transparent ${item.percent}% 100%)`}
+								>
+									<div class="flex h-16 w-16 items-center justify-center rounded-full bg-panel">
+										{item.percent}%
+									</div>
+								</div>
+								<p class="max-w-24 text-center text-xs text-muted">{item.name}</p>
+							</div>
+						))}
 					</div>
-					<p class="text-xs text-muted">{item.name}</p>
 				</div>
 			))
 		}

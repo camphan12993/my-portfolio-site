@@ -19,18 +19,13 @@ import skills from '../../data/skills.json';
 						{group.label}
 					</p>
 
-					<div class="mt-6 flex flex-wrap gap-6">
+					<div class="mt-6 grid gap-x-8 gap-y-5 sm:grid-cols-2">
 						{group.items.map((item, i) => (
-							<div class="flex flex-col items-center gap-3" data-aos="zoom-in" data-aos-delay={i * 60}>
-								<div
-									class="relative flex h-20 w-20 items-center justify-center rounded-full border border-line text-sm font-semibold text-accent"
-									style={`background: conic-gradient(var(--color-accent) ${item.percent}%, transparent ${item.percent}% 100%)`}
-								>
-									<div class="flex h-16 w-16 items-center justify-center rounded-full bg-panel">
-										{item.percent}%
-									</div>
+							<div data-aos="fade-up" data-aos-delay={i * 60}>
+								<p class="text-sm text-ink">{item.name}</p>
+								<div class="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-panel-2">
+									<div class="h-full rounded-full bg-ink/70" style={`width: ${item.percent}%`} />
 								</div>
-								<p class="max-w-24 text-center text-xs text-muted">{item.name}</p>
 							</div>
 						))}
 					</div>

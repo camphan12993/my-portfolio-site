@@ -2,23 +2,21 @@
 import Layout from "../layouts/Layout.astro";
 import PortfolioFrame from "../components/PortfolioFrame.astro";
 import Hero from "../components/sections/Hero.astro";
-import About from "../components/sections/About.astro";
 import Resume from "../components/sections/Resume.astro";
 import Certificates from "../components/sections/Certificates.astro";
 import Skills from "../components/sections/Skills.astro";
 import Portfolio from "../components/sections/Portfolio.astro";
-import Brands from "../components/sections/Brands.astro";
+import Footer from "../components/Footer.astro";
 import profile from "../data/profile.json";
 ---
 
 <Layout title={`${profile.name} | ${profile.role}`} description={profile.role}>
   <PortfolioFrame>
     <Hero />
-    <About />
     <Resume />
     <Certificates />
     <Skills />
     <Portfolio />
-    <Brands />
+    <Footer />
   </PortfolioFrame>
 </Layout>

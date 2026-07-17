@@ -5,11 +5,11 @@
 	"heading": {
 		"prefix": "Say Hi from ",
 		"highlight": "Cam",
-		"suffix": ", Developer and UI/UX Designer"
+		"suffix": ", Front-end Developer"
 	},
-	"subtitle": "I lead front-end teams and design interfaces that are simple to use and built to last.",
+	"subtitle": "I believe an interface should be felt, not just used — and I chase that feeling in every pixel, every interaction, and every screen I get to shape. For me, front-end development and design aren't separate disciplines; they're two sides of the same craft.",
 	"stats": [
 		{ "value": "8+", "label": "Years of experience" },
-		{ "value": "20+", "label": "Projects completed on 4+ countries" }
+		{ "value": "20+", "label": "Projects completed across 4+ countries" }
 	]
 }

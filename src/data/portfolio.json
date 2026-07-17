@@ -9,39 +9,58 @@
 	},
 	"projects": [
 		{
-			"title": "Bureau - Architecture Studio Website",
-			"description": "Project description goes here.",
-			"tech": ["Figma", "Framer", "WordPress"],
-			"role": "Your role on this project",
-			"image": "https://picsum.photos/seed/bureau-project/800/600"
+			"title": "DTI",
+			"description": "A monitoring and operations system for tram services in Melbourne, Australia.",
+			"tech": ["Angular", ".NET"],
+			"team": "8 people",
+			"role": "Front-end Lead & Project Manager",
+			"roleDescription": "Technical lead and Front-end developer. Main point of contact with the Australian client to align on solutions and plan feature rollouts, while also mentoring new team members and owning the overall quality of the project.",
+			"icon": "tram-front"
 		},
 		{
-			"title": "Moonex WordPress Theme",
-			"description": "Project description goes here.",
-			"tech": ["WordPress", "Laravel/PHP"],
-			"role": "Your role on this project",
-			"image": "https://picsum.photos/seed/moonex-project/800/600"
+			"title": "Staff Management System",
+			"description": "An in-house HR management system built by Enouvo and sold to multiple clients.",
+			"tech": ["Angular", ".NET", "SQL Server"],
+			"team": "5 people",
+			"role": "Front-end Team Leader",
+			"roleDescription": "Guided the team to build the product in a way that can be customized for different clients. Owned the shared codebase quality and Front-end architecture direction, while working directly with each client to clarify customization requirements before implementation.",
+			"icon": "users"
 		},
 		{
-			"title": "Taskly Dashboard",
-			"description": "Project description goes here.",
-			"tech": ["Figma", "Webflow"],
-			"role": "Your role on this project",
-			"image": "https://picsum.photos/seed/taskly-project/800/600"
+			"title": "Investor Zero",
+			"description": "A startup product helping first-time investors pitch ideas and raise funding online.",
+			"tech": ["Angular", "Node.js", "Postgres"],
+			"team": "6 people",
+			"role": "Front-end Team Leader & UI/UX Designer",
+			"roleDescription": "Led the Front-end team during the startup's early product (MVP) phase, quickly turning ideas into features. Owned the Front-end technical direction and worked closely with the founder to iterate the product based on market feedback, while also owning the product's UI/UX design.",
+			"icon": "trending-up"
 		},
 		{
-			"title": "Hinterland - Real Estate Site Redesign",
-			"description": "Project description goes here.",
-			"tech": ["Figma", "React"],
-			"role": "Your role on this project",
-			"image": "https://picsum.photos/seed/hinterland-project/800/600"
+			"title": "PayLocker",
+			"description": "A startup platform built by Infostatus connecting contractors and homeowners to manage payments and construction progress transparently.",
+			"tech": ["Angular", ".NET", "SQL Server"],
+			"team": "5 people",
+			"role": "Front-end Team Leader & UI/UX Designer",
+			"roleDescription": "Responsible for building payment and construction-progress tracking flows that are transparent and easy to understand for non-technical users. Managed product quality, set the Front-end technical direction, and mentored new team members. Also owned the end-to-end UI/UX design for these flows, from wireframes to final interface.",
+			"icon": "hard-hat"
 		},
 		{
-			"title": "Lewis Portfolio Framer Template",
-			"description": "Project description goes here.",
-			"tech": ["Framer"],
-			"role": "Your role on this project",
-			"image": "https://picsum.photos/seed/lewis-project/800/600"
+			"title": "HallyuClass",
+			"description": "An online Korean-learning app for beginners, with lessons ranging from basic to advanced.",
+			"tech": ["Flutter", "Node.js", "Postgres"],
+			"team": "3 people",
+			"role": "Mobile Developer",
+			"roleDescription": "Built the app end-to-end with Flutter from development through release, including publishing to the App Store and Google Play.",
+			"icon": "languages"
+		},
+		{
+			"title": "NGK Spark Plug",
+			"description": "An internal app for managing electronic components on a spark plug production line at a factory in Japan.",
+			"tech": ["Flutter", "Firebase", "PHP", "MySQL"],
+			"team": "4 people",
+			"role": "Mobile Developer",
+			"roleDescription": "Member of the internal project team for a Japanese client, building the component-management app in Flutter, handling QA, and coordinating app releases to the stores.",
+			"icon": "factory"
 		}
 	]
 }

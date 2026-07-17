@@ -1,11 +1,30 @@
 ---
-import SectionHeading from '../SectionHeading.astro';
 import Icon from '../Icon.astro';
 import hero from '../../data/hero.json';
+
+const nowrapPhrase = 'Front-end Developer';
+const nowrapIndex = hero.heading.suffix.indexOf(nowrapPhrase);
+const suffixRest = nowrapIndex >= 0 ? hero.heading.suffix.slice(0, nowrapIndex) : hero.heading.suffix;
+const suffixNowrap = nowrapIndex >= 0 ? hero.heading.suffix.slice(nowrapIndex) : '';
 ---
 
 <section id={hero.id} class="relative border-b border-line px-8 py-20 sm:px-12">
-	<SectionHeading tag={hero.tag} icon={hero.icon} heading={hero.heading} as="h1" />
+	<div class="mb-6" data-aos="fade-up">
+		<span class="inline-flex items-center gap-2 rounded-full border border-line px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-muted">
+			<Icon name={hero.icon as any} class="h-3.5 w-3.5" />
+			{hero.tag}
+		</span>
+	</div>
+
+	<h1
+		class="relative font-semibold tracking-tight text-ink text-4xl sm:text-5xl lg:text-6xl xl:text-7xl"
+		data-aos="fade-up"
+		data-aos-delay="80"
+		data-typewriter
+	>
+		<span data-segment="prefix">{hero.heading.prefix}</span><span class="text-accent" data-segment="highlight">{hero.heading.highlight}</span><span data-segment="suffix">{suffixRest}</span><span class="whitespace-nowrap" data-segment="suffix-nowrap">{suffixNowrap}</span>
+	</h1>
+
 	<p class="mt-6 max-w-2xl text-lg text-muted sm:text-xl" data-aos="fade-up" data-aos-delay="160">
 		{hero.subtitle}
 	</p>
@@ -22,7 +41,7 @@ import hero from '../../data/hero.json';
 	</div>
 
 	<a
-		href="#about"
+		href="#resume"
 		aria-label="Scroll to next section"
 		data-aos="fade"
 		data-aos-delay="500"
@@ -31,3 +50,54 @@ import hero from '../../data/hero.json';
 		<Icon name="arrow-down" class="h-5 w-5" />
 	</a>
 </section>
+
+<script>
+	const heading = document.querySelector<HTMLElement>('[data-typewriter]');
+
+	if (heading) {
+		const segments = Array.from(heading.querySelectorAll<HTMLElement>('[data-segment]'));
+
+		// Lay out every character in its final position up front (so line-wrapping is
+		// computed once and never changes), then reveal them one by one via opacity.
+		const chars: HTMLElement[] = [];
+		segments.forEach((segment) => {
+			const text = segment.textContent ?? '';
+			segment.textContent = '';
+			Array.from(text).forEach((char) => {
+				const charEl = document.createElement('span');
+				charEl.textContent = char;
+				charEl.style.opacity = '0';
+				segment.appendChild(charEl);
+				chars.push(charEl);
+			});
+		});
+
+		const cursor = document.createElement('span');
+		cursor.setAttribute('aria-hidden', 'true');
+		cursor.className = 'animate-blink absolute w-[3px] bg-accent';
+		heading.appendChild(cursor);
+
+		function moveCursorTo(charEl: HTMLElement, atCharStart = false) {
+			const headingRect = heading!.getBoundingClientRect();
+			const charRect = charEl.getBoundingClientRect();
+			cursor.style.left = `${(atCharStart ? charRect.left : charRect.right) - headingRect.left}px`;
+			cursor.style.top = `${charRect.top - headingRect.top}px`;
+			cursor.style.height = `${charRect.height}px`;
+		}
+
+		if (chars.length > 0) moveCursorTo(chars[0], true);
+
+		const typingSpeed = 90;
+		let index = 0;
+
+		function typeNext() {
+			if (index >= chars.length) return;
+			chars[index].style.opacity = '1';
+			moveCursorTo(chars[index]);
+			index++;
+			setTimeout(typeNext, typingSpeed);
+		}
+
+		setTimeout(typeNext, 300);
+	}
+</script>

@@ -13,26 +13,28 @@
 			"items": [
 				{ "name": "HTML/CSS/JavaScript", "percent": 90 },
 				{ "name": "Angular", "percent": 90 },
-				{ "name": "React", "percent": 90 },
-				{ "name": "Tailwind CSS", "percent": 90 },
-				{ "name": "Node.js", "percent": 90 }
+				{ "name": "Flutter", "percent": 80 },
+				{ "name": "Astro.js", "percent": 80 },
+				{ "name": "Tailwind CSS", "percent": 70 },
+				{ "name": "React", "percent": 55 },
+				{ "name": "Node.js", "percent": 45 }
 			]
 		},
 		{
 			"label": "Design",
 			"items": [
-				{ "name": "Figma", "percent": 90 },
-				{ "name": "Sketch", "percent": 90 }
+				{ "name": "Figma", "percent": 80 },
+				{ "name": "Branding & Visual Design", "percent": 75 }
 			]
 		},
 		{
 			"label": "Soft Skill",
 			"items": [
-				{ "name": "Leadership", "percent": 90 },
+				{ "name": "Leadership", "percent": 80 },
 				{ "name": "Communication", "percent": 90 },
 				{ "name": "Teamwork", "percent": 90 },
-				{ "name": "Problem Solving", "percent": 90 },
-				{ "name": "English", "percent": 80 }
+				{ "name": "Problem Solving", "percent": 85 },
+				{ "name": "English", "percent": 75 }
 			]
 		}
 	]

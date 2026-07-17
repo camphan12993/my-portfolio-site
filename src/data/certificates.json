@@ -8,7 +8,7 @@
 		"suffix": ""
 	},
 	"items": [
-		{ "name": "Certificate Name", "issuer": "Issuing Organization", "date": "2024", "url": "" },
-		{ "name": "Certificate Name", "issuer": "Issuing Organization", "date": "2023", "url": "" }
+		{ "name": "AWS Cloud Practitioner", "issuer": "Amazon Web Services", "url": "" },
+		{ "name": "TOEIC 760", "issuer": "IIG", "url": "" }
 	]
 }

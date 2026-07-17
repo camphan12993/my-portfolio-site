@@ -4,14 +4,6 @@ import nav from '../data/nav.json';
 ---
 
 <aside class="hidden flex-col items-center gap-4 p-6 lg:sticky lg:top-0 lg:flex lg:h-screen lg:p-8">
-	<button
-		type="button"
-		class="flex h-9 w-9 items-center justify-center rounded-full border border-line text-muted transition hover:text-ink"
-		aria-label="Menu"
-	>
-		<Icon name="menu" class="h-4 w-4" />
-	</button>
-
 	<nav class="flex flex-col items-center gap-2 rounded-full border border-line bg-panel p-3" data-side-nav>
 		{
 			nav.items.map((item, i) => (

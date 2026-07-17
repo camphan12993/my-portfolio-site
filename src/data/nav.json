@@ -1,7 +1,6 @@
 {
 	"items": [
 		{ "icon": "home", "label": "Introduce", "href": "#introduce" },
-		{ "icon": "user", "label": "About", "href": "#about" },
 		{ "icon": "briefcase", "label": "Resume", "href": "#resume" },
 		{ "icon": "award", "label": "Certificates", "href": "#certificates" },
 		{ "icon": "hexagon", "label": "Skills", "href": "#skills" },

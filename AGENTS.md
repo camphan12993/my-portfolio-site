@@ -32,12 +32,28 @@ Three-column app shell (`src/components/PortfolioFrame.astro`), fixed on desktop
 - **Center** — `<slot />`, the scrollable page content: an ordered list of section components from `src/components/sections/`.
 - **Right** — `SideNav.astro`: vertical icon nav built from `src/data/nav.json`.
 
-Each section in `src/components/sections/` (`Hero`, `About`, `Resume`, `Services`, `Skills`, `Portfolio`, `Testimonials`, `Brands`, `Pricing`) pulls its copy from a matching JSON file in `src/data/` and is assembled in order in `src/pages/index.astro`. Most sections share `SectionHeading.astro` (tag + `prefix`/`highlight`/`suffix` heading) for a consistent look — edit content by editing the JSON, not the section markup, unless the structure itself changes.
+Each section in `src/components/sections/` (`Hero`, `Resume`, `Certificates`, `Skills`, `Portfolio`) pulls its copy from a matching JSON file in `src/data/` and is assembled in order in `src/pages/index.astro`. Most sections share `SectionHeading.astro` (tag + `prefix`/`highlight`/`suffix` heading) for a consistent look — edit content by editing the JSON, not the section markup, unless the structure itself changes. `About`, `Services`, `Testimonials`, `Brands`, `Pricing` were removed in a later refactor along with their data files — do not reintroduce them without also adding them back to the nav/index assembly.
 
 - `src/layouts/Layout.astro` — outer HTML shell (head, meta, imports `src/styles/global.css`, sets the dark body background).
 - `src/data/*.json` — all page copy, one file per section; this is what to edit when real content arrives.
 - `public/` — static assets served as-is (favicons, etc.).
 - No content collections or server-side framework adapters are configured — this is a fully static site.
+
+## Content sync policy
+
+`CONTENT_DRAFT.md` (repo root) is a Vietnamese/free-text mirror of `src/data/*.json`, used as the
+editable source of truth for copy. The two must always stay in sync:
+
+- If `src/data/*.json` changes (new project, updated bio, new skill, etc.), update the matching section
+  of `CONTENT_DRAFT.md` in the same change.
+- If `CONTENT_DRAFT.md` changes (user edits content there), update the matching `src/data/*.json` file(s)
+  in the same change.
+- If a section is added/removed from the site (new component in `src/components/sections/` + entry in
+  `src/pages/index.astro`, or removal of one), add/remove the corresponding section in `CONTENT_DRAFT.md`
+  and its nav entry in `src/data/nav.json` at the same time — don't leave dangling `#anchor` links in nav
+  pointing at sections that no longer exist.
+- Never let one of the two go stale relative to the other; treat a change to one as incomplete until the
+  other is updated.
 
 ## Claude Code project config
 

@@ -41,13 +41,15 @@ Each section in `src/components/sections/` (`Hero`, `Resume`, `Certificates`, `S
 
 ## Content sync policy
 
-`CONTENT_DRAFT.md` (repo root) is a Vietnamese/free-text mirror of `src/data/*.json`, used as the
+`CONTENT_DRAFT.md` (repo root) is a free-text mirror of `src/data/*.json`, used as the
 editable source of truth for copy. The two must always stay in sync:
 
-- If `src/data/*.json` changes (new project, updated bio, new skill, etc.), update the matching section
-  of `CONTENT_DRAFT.md` in the same change.
-- If `CONTENT_DRAFT.md` changes (user edits content there), update the matching `src/data/*.json` file(s)
-  in the same change.
+- `CONTENT_DRAFT.md` is edited first. When content changes (new project, updated bio, new skill, rewritten
+  description, etc.), write the change into `CONTENT_DRAFT.md` first, then propagate it into the matching
+  `src/data/*.json` file(s) as a follow-up step in the same change — never edit the JSON first and backfill
+  the draft afterward.
+- If `CONTENT_DRAFT.md` changes because the user edited it directly, update the matching `src/data/*.json`
+  file(s) in the same change.
 - If a section is added/removed from the site (new component in `src/components/sections/` + entry in
   `src/pages/index.astro`, or removal of one), add/remove the corresponding section in `CONTENT_DRAFT.md`
   and its nav entry in `src/data/nav.json` at the same time — don't leave dangling `#anchor` links in nav

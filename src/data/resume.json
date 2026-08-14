@@ -12,25 +12,25 @@
 			"period": "2021 - 2026",
 			"org": "Infostatus",
 			"roles": ["Front-end Team Leader", "UI/UX Designer"],
-			"description": "Led the front-end team building web applications with Angular and React, while owning the company's UI/UX, branding, and website design — bridging engineering and design across projects."
+			"description": "Led and grew a front-end team delivering production web applications in Angular and React for international clients, from architecture decisions to code review standards. Also acted as the company's UI/UX and branding lead — designing interfaces in Figma, defining the visual identity, and shaping the corporate website — so design and engineering decisions stayed consistent across every project the team shipped."
 		},
 		{
 			"period": "2017 - 2020",
 			"org": "Enouvo IT Solution",
 			"roles": ["Angular Team Leader"],
-			"description": "Led a team of Angular developers delivering enterprise web applications, owning technical decisions and code quality."
+			"description": "Managed a team of Angular developers building enterprise-grade web applications for outsourcing clients, from technical architecture through delivery. Set coding conventions and reviewed pull requests to keep quality consistent across the codebase, coordinated sprint planning with product owners, and mentored junior engineers as the team scaled."
 		},
 		{
 			"period": "2016 - 2017",
 			"org": "FPT Software Da Nang",
 			"roles": ["Java Developer"],
-			"description": "Developed and maintained backend services in Java as part of a software outsourcing team."
+			"description": "Built and maintained backend services in Java for outsourcing clients, working within an agile team to implement features, fix defects, and write unit tests. This role gave an early grounding in server-side logic and database design that later shaped how I approach full-stack collaboration as a front-end lead."
 		},
 		{
 			"period": "2011 - 2016",
 			"org": "Da Nang University of Technology",
 			"roles": ["Bachelor of Information Technology"],
-			"description": "Focused on software engineering and web development fundamentals."
+			"description": "Studied software engineering fundamentals — data structures, algorithms, databases, and object-oriented design — with a growing focus on web development in the final years, which set the direction for a front-end-focused career afterward."
 		}
 	]
 }

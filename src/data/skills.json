@@ -15,7 +15,7 @@
 				{ "name": "Angular", "percent": 90 },
 				{ "name": "Flutter", "percent": 80 },
 				{ "name": "Astro.js", "percent": 80 },
-				{ "name": "Tailwind CSS", "percent": 70 },
+				{ "name": "Next.js", "percent": 50 },
 				{ "name": "React", "percent": 55 },
 				{ "name": "Node.js", "percent": 45 }
 			]

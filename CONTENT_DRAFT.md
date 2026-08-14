@@ -40,16 +40,16 @@ Portfolio hiện dùng icon (lucide) thay vì ảnh thật cho từng dự án �
 - 2021 - 2026 - Infostatus
   - Front-end Team Leader
   - UI/UX Designer
-  - Mô tả: Led the front-end team building web applications with Angular and React, while owning the company's UI/UX, branding, and website design — bridging engineering and design across projects.
+  - Mô tả: Led and grew a front-end team delivering production web applications in Angular and React for international clients, from architecture decisions to code review standards. Also acted as the company's UI/UX and branding lead — designing interfaces in Figma, defining the visual identity, and shaping the corporate website — so design and engineering decisions stayed consistent across every project the team shipped.
 - 2017 - 2020 - Enouvo IT Solution
   - Angular Team Leader
-  - Mô tả: Led a team of Angular developers delivering enterprise web applications, owning technical decisions and code quality.
+  - Mô tả: Managed a team of Angular developers building enterprise-grade web applications for outsourcing clients, from technical architecture through delivery. Set coding conventions and reviewed pull requests to keep quality consistent across the codebase, coordinated sprint planning with product owners, and mentored junior engineers as the team scaled.
 - 2016 - 2017 - FPT Software Da Nang
   - Java Developer
-  - Mô tả: Developed and maintained backend services in Java as part of a software outsourcing team.
+  - Mô tả: Built and maintained backend services in Java for outsourcing clients, working within an agile team to implement features, fix defects, and write unit tests. This role gave an early grounding in server-side logic and database design that later shaped how I approach full-stack collaboration as a front-end lead.
 - 2011 - 2016 - Da Nang University of Technology
   - Bachelor of Information Technology
-  - Mô tả: Focused on software engineering and web development fundamentals.
+  - Mô tả: Studied software engineering fundamentals — data structures, algorithms, databases, and object-oriented design — with a growing focus on web development in the final years, which set the direction for a front-end-focused career afterward.
 
 ## 4. Certificates (chứng chỉ) — `src/data/certificates.json`
 
@@ -64,7 +64,7 @@ Portfolio hiện dùng icon (lucide) thay vì ảnh thật cho từng dự án �
 - Angular — 90%
 - Flutter — 80%
 - Astro.js — 80%
-- Tailwind CSS — 70%
+- Next.js — 50%
 - React — 55%
 - Node.js — 45%
 
@@ -84,45 +84,45 @@ Portfolio hiện dùng icon (lucide) thay vì ảnh thật cho từng dự án �
 ## 6. Portfolio (dự án nổi bật) — `src/data/portfolio.json`
 
 - Tên dự án: DTI
-  - Mô tả: A monitoring and operations system for tram services in Melbourne, Australia.
+  - Mô tả: A real-time monitoring and operations platform used by tram operators in Melbourne, Australia, tracking vehicle status, schedules, and incidents across the network.
   - Công nghệ: Angular, .NET
   - Quy mô: 8 people
-  - Vai trò: Front-end Lead & Project Manager — Technical lead and Front-end developer. Main point of contact with the Australian client to align on solutions and plan feature rollouts, while also mentoring new team members and owning the overall quality of the project.
+  - Vai trò: Front-end Lead & Project Manager — Served as technical lead and primary front-end developer, translating the client's operational requirements into a scalable Angular architecture. Acted as the main point of contact with the Australian client for solution alignment and release planning, managed the project roadmap, and mentored new members joining the 8-person team.
   - Icon: tram-front
 
 - Tên dự án: Staff Management System
-  - Mô tả: An in-house HR management system built by Enouvo and sold to multiple clients.
+  - Mô tả: An in-house HR management platform built by Enouvo — covering employee records, attendance, and payroll workflows — later packaged and resold as a configurable product to multiple external clients.
   - Công nghệ: Angular, .NET, SQL Server
   - Quy mô: 5 people
-  - Vai trò: Front-end Team Leader — Guided the team to build the product in a way that can be customized for different clients. Owned the shared codebase quality and Front-end architecture direction, while working directly with each client to clarify customization requirements before implementation.
+  - Vai trò: Front-end Team Leader — Directed a 5-person front-end team in designing a single codebase that could be configured per client rather than forked and rebuilt each time. Defined the module structure and coding standards that kept the shared codebase maintainable as more clients came on board, and worked directly with client stakeholders to scope customization requests before implementation began.
   - Icon: users
 
 - Tên dự án: Investor Zero
-  - Mô tả: A startup product helping first-time investors pitch ideas and raise funding online.
+  - Mô tả: A startup platform helping first-time investors put together pitches and raise funding online, connecting founders with early-stage backers.
   - Công nghệ: Angular, Node.js, Postgres
   - Quy mô: 6 people
-  - Vai trò: Front-end Team Leader & UI/UX Designer — Led the Front-end team during the startup's early product (MVP) phase, quickly turning ideas into features. Owned the Front-end technical direction and worked closely with the founder to iterate the product based on market feedback, while also owning the product's UI/UX design.
+  - Vai trò: Front-end Team Leader & UI/UX Designer — Led a 6-person front-end team through the startup's MVP phase, where priorities shifted week to week and speed mattered as much as quality. Worked directly with the founder to turn early product ideas into shippable features, iterating the UI/UX design based on user feedback while keeping the Angular front-end structured enough to support fast changes.
   - Icon: trending-up
 
 - Tên dự án: PayLocker
-  - Mô tả: A startup platform built by Infostatus connecting contractors and homeowners to manage payments and construction progress transparently.
+  - Mô tả: A startup platform built by Infostatus that connects contractors and homeowners to manage payments and construction progress with full transparency for both sides.
   - Công nghệ: Angular, .NET, SQL Server
   - Quy mô: 5 people
-  - Vai trò: Front-end Team Leader & UI/UX Designer — Responsible for building payment and construction-progress tracking flows that are transparent and easy to understand for non-technical users. Managed product quality, set the Front-end technical direction, and mentored new team members. Also owned the end-to-end UI/UX design for these flows, from wireframes to final interface.
+  - Vai trò: Front-end Team Leader & UI/UX Designer — Owned the payment and construction-progress tracking flows end to end, from wireframes to production UI, designing them to stay clear and trustworthy for homeowners with no construction background. Set the Angular front-end architecture for the wider product, mentored newer members of the 5-person team, and stayed accountable for the overall quality bar as the product moved from MVP to a client-facing release.
   - Icon: hard-hat
 
 - Tên dự án: HallyuClass
-  - Mô tả: An online Korean-learning app for beginners, with lessons ranging from basic to advanced.
+  - Mô tả: An online Korean-learning app for beginner-to-advanced learners, combining structured lessons, vocabulary practice, and progress tracking.
   - Công nghệ: Flutter, Node.js, Postgres
   - Quy mô: 3 people
-  - Vai trò: Mobile Developer — Built the app end-to-end with Flutter from development through release, including publishing to the App Store and Google Play.
+  - Vai trò: Mobile Developer — Built the app end to end in Flutter as part of a 3-person team, from the first screens through release, including setting up the build pipeline and publishing to the App Store and Google Play.
   - Icon: languages
 
 - Tên dự án: NGK Spark Plug
-  - Mô tả: An internal app for managing electronic components on a spark plug production line at a factory in Japan.
+  - Mô tả: An internal inventory app for a Japanese client, tracking electronic components on a spark plug production line at a factory to reduce manual counting errors.
   - Công nghệ: Flutter, Firebase, PHP, MySQL
   - Quy mô: 4 people
-  - Vai trò: Mobile Developer — Member of the internal project team for a Japanese client, building the component-management app in Flutter, handling QA, and coordinating app releases to the stores.
+  - Vai trò: Mobile Developer — Worked as part of a 4-person team embedded with a Japanese client, building the component-tracking app in Flutter against tight factory-floor requirements. Handled QA cycles directly with the client and coordinated release timing to the App Store and Google Play around production schedule constraints.
   - Icon: factory
 
 ## 7. Nav (menu điều hướng bên phải) — `src/data/nav.json`

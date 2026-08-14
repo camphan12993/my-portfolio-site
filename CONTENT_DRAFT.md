@@ -86,42 +86,48 @@ dedicated image field yet.
 
 - Project name: DTI
   - Description: A real-time monitoring and operations platform used by tram operators in Melbourne, Australia, tracking vehicle status, schedules, and incidents across the network.
-  - Tech stack: Angular, .NET
+  - Tech stack: Angular, Material, OpenStreetMap, NgRx
+  - Angular formed the backbone of the app, styled with Angular Material for a clean, consistent interface. A WebSocket connection kept vehicle positions and incident data flowing in real time straight onto the map, which was built on OpenStreetMap and customized to match the product's visual language. NgRx tied it all together, keeping state predictable as data streamed in continuously from across the tram network.
   - Team size: 8 people
   - Role: Front-end Lead & Project Manager — Served as technical lead and primary front-end developer, translating the client's operational requirements into a scalable Angular architecture. Acted as the main point of contact with the Australian client for solution alignment and release planning, managed the project roadmap, and mentored new members joining the 8-person team.
   - Icon: tram-front
 
 - Project name: Staff Management System
   - Description: An in-house HR management platform built by Enouvo — covering employee records, attendance, and payroll workflows — later packaged and resold as a configurable product to multiple external clients.
-  - Tech stack: Angular, .NET, SQL Server
+  - Tech stack: Angular, CoreUI, Chart.js, NGXS
+  - Angular paired with CoreUI gave the interface a clean, enterprise-ready feel across every client configuration. Chart.js brought the dashboards to life with attendance and payroll trends at a glance, while NGXS kept state management lean and predictable as the same codebase flexed to fit each client's needs.
   - Team size: 5 people
   - Role: Front-end Team Leader — Directed a 5-person front-end team in designing a single codebase that could be configured per client rather than forked and rebuilt each time. Defined the module structure and coding standards that kept the shared codebase maintainable as more clients came on board, and worked directly with client stakeholders to scope customization requests before implementation began.
   - Icon: users
 
 - Project name: Investor Zero
   - Description: A startup platform helping first-time investors put together pitches and raise funding online, connecting founders with early-stage backers.
-  - Tech stack: Angular, Node.js, Postgres
+  - Tech stack: Angular, PrimeNG, Angular Universal, NGXS, PDF.js
+  - Angular and PrimeNG formed the foundation of the UI, fast to iterate on as product priorities shifted week to week. Angular Universal added server-side rendering for fast first loads and better SEO, NGXS kept state manageable through rapid MVP changes, and PDF.js powered in-browser document viewing and e-signatures — letting founders and backers review and sign pitch documents without ever leaving the app.
   - Team size: 6 people
   - Role: Front-end Team Leader & UI/UX Designer — Led a 6-person front-end team through the startup's MVP phase, where priorities shifted week to week and speed mattered as much as quality. Worked directly with the founder to turn early product ideas into shippable features, iterating the UI/UX design based on user feedback while keeping the Angular front-end structured enough to support fast changes.
   - Icon: trending-up
 
 - Project name: PayLocker
   - Description: A startup platform built by Infostatus that connects contractors and homeowners to manage payments and construction progress with full transparency for both sides.
-  - Tech stack: Angular, .NET, SQL Server
+  - Tech stack: Angular, PrimeNG, Tailwind CSS, Sumsub SDK
+  - Angular, PrimeNG, and Tailwind CSS combined to give contractors and homeowners an interface that felt clear and trustworthy at every step. State flowed through Angular services paired with signals for fine-grained reactivity, and the Sumsub SDK was woven in to handle KYB/KYC verification, keeping both sides of every transaction accountable.
   - Team size: 5 people
   - Role: Front-end Team Leader & UI/UX Designer — Owned the payment and construction-progress tracking flows end to end, from wireframes to production UI, designing them to stay clear and trustworthy for homeowners with no construction background. Set the Angular front-end architecture for the wider product, mentored newer members of the 5-person team, and stayed accountable for the overall quality bar as the product moved from MVP to a client-facing release.
   - Icon: hard-hat
 
 - Project name: HallyuClass
   - Description: An online Korean-learning app for beginner-to-advanced learners, combining structured lessons, vocabulary practice, and progress tracking.
-  - Tech stack: Flutter, Node.js, Postgres
+  - Tech stack: Flutter, Riverpod, Google Speech, Codemagic
+  - Flutter Material shaped a clean, lesson-friendly interface, with Riverpod keeping state predictable across screens. A WebSocket connection streamed learners' voice recordings to the server and back in real time, powering a Google Speech-driven pronunciation feature that gave instant feedback on Korean pronunciation. Codemagic handled CI/CD end to end, automating builds and releases straight to the App Store and Google Play.
   - Team size: 3 people
   - Role: Mobile Developer — Built the app end to end in Flutter as part of a 3-person team, from the first screens through release, including setting up the build pipeline and publishing to the App Store and Google Play.
   - Icon: languages
 
 - Project name: NGK Spark Plug
   - Description: An internal inventory app for a Japanese client, tracking electronic components on a spark plug production line at a factory to reduce manual counting errors.
-  - Tech stack: Flutter, Firebase, PHP, MySQL
+  - Tech stack: Flutter, Provider, Sqflite, Firebase Cloud Messaging, Codemagic
+  - Flutter Material kept the interface simple and functional for factory-floor use, with Provider managing state throughout the app. Sqflite gave the app offline-first local storage, so staff could keep counting components even through patchy factory Wi-Fi, while Firebase Cloud Messaging pushed real-time alerts the moment they were needed. Built strictly for internal use, the app shipped as Ad Hoc builds distributed through Codemagic rather than published to the public app stores.
   - Team size: 4 people
   - Role: Mobile Developer — Worked as part of a 4-person team embedded with a Japanese client, building the component-tracking app in Flutter against tight factory-floor requirements. Handled QA cycles directly with the client and coordinated release timing to the App Store and Google Play around production schedule constraints.
   - Icon: factory

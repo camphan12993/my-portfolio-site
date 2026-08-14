@@ -41,6 +41,11 @@ import portfolio from "../../data/portfolio.json";
             <p class="text-sm font-semibold uppercase tracking-wide text-white">
               Tech
             </p>
+            {project.frontendTech && (
+              <p class="mt-2 text-sm leading-relaxed text-muted">
+                {project.frontendTech}
+              </p>
+            )}
             <div class="mt-2 flex flex-wrap gap-2">
               {project.tech.map((tech) => (
                 <span class="rounded-full border border-line px-3 py-1 text-sm text-muted">

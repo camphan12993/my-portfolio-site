@@ -22,7 +22,7 @@ dedicated image field yet.
 - Location: Base in Da Nang, Vietnam
 - Copyright text: © 2026 Cam Huynh Phan. All Rights Reserved
 - "Hire Me!" button → mailto:cam.phan12993@gmail.com
-- "Download CV" button → /cv.pdf (TODO: needs a real CV file at `public/cv.pdf`)
+- "Download CV" button → /CamPhan-CV.pdf
 - Social links:
   - LinkedIn: https://www.linkedin.com/in/camphan12993
   - GitHub: https://github.com/camphan12993

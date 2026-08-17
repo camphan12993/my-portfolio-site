@@ -11,7 +11,12 @@
 		{
 			"title": "DTI",
 			"description": "A real-time monitoring and operations platform used by tram operators in Melbourne, Australia, tracking vehicle status, schedules, and incidents across the network.",
-			"tech": ["Angular", "Material", "OpenStreetMap", "NgRx"],
+			"tech": [
+				"Angular",
+				"Material",
+				"OpenStreetMap",
+				"NgRx"
+			],
 			"frontendTech": "Angular formed the backbone of the app, styled with Angular Material for a clean, consistent interface. A WebSocket connection kept vehicle positions and incident data flowing in real time straight onto the map, which was built on OpenStreetMap and customized to match the product's visual language. NgRx tied it all together, keeping state predictable as data streamed in continuously from across the tram network.",
 			"team": "8 people",
 			"role": "Front-end Lead & Project Manager",
@@ -21,7 +26,12 @@
 		{
 			"title": "Staff Management System",
 			"description": "An in-house HR management platform built by Enouvo — covering employee records, attendance, and payroll workflows — later packaged and resold as a configurable product to multiple external clients.",
-			"tech": ["Angular", "CoreUI", "Chart.js", "NGXS"],
+			"tech": [
+				"Angular",
+				"CoreUI",
+				"Chart.js",
+				"NGXS"
+			],
 			"frontendTech": "Angular paired with CoreUI gave the interface a clean, enterprise-ready feel across every client configuration. Chart.js brought the dashboards to life with attendance and payroll trends at a glance, while NGXS kept state management lean and predictable as the same codebase flexed to fit each client's needs.",
 			"team": "5 people",
 			"role": "Front-end Team Leader",
@@ -31,7 +41,13 @@
 		{
 			"title": "Investor Zero",
 			"description": "A startup platform helping first-time investors put together pitches and raise funding online, connecting founders with early-stage backers.",
-			"tech": ["Angular", "PrimeNG", "Angular Universal", "NGXS", "PDF.js"],
+			"tech": [
+				"Angular",
+				"PrimeNG",
+				"Angular Universal",
+				"NGXS",
+				"PDF.js"
+			],
 			"frontendTech": "Angular and PrimeNG formed the foundation of the UI, fast to iterate on as product priorities shifted week to week. Angular Universal added server-side rendering for fast first loads and better SEO, NGXS kept state manageable through rapid MVP changes, and PDF.js powered in-browser document viewing and e-signatures — letting founders and backers review and sign pitch documents without ever leaving the app.",
 			"team": "6 people",
 			"role": "Front-end Team Leader & UI/UX Designer",
@@ -41,7 +57,12 @@
 		{
 			"title": "PayLocker",
 			"description": "A startup platform built by Infostatus that connects contractors and homeowners to manage payments and construction progress with full transparency for both sides.",
-			"tech": ["Angular", "PrimeNG", "Tailwind CSS", "Sumsub SDK"],
+			"tech": [
+				"Angular",
+				"PrimeNG",
+				"Tailwind CSS",
+				"Sumsub SDK"
+			],
 			"frontendTech": "Angular, PrimeNG, and Tailwind CSS combined to give contractors and homeowners an interface that felt clear and trustworthy at every step. State flowed through Angular services paired with signals for fine-grained reactivity, and the Sumsub SDK was woven in to handle KYB/KYC verification, keeping both sides of every transaction accountable.",
 			"team": "5 people",
 			"role": "Front-end Team Leader & UI/UX Designer",
@@ -51,7 +72,12 @@
 		{
 			"title": "HallyuClass",
 			"description": "An online Korean-learning app for beginner-to-advanced learners, combining structured lessons, vocabulary practice, and progress tracking.",
-			"tech": ["Flutter", "Riverpod", "Google Speech", "Codemagic"],
+			"tech": [
+				"Flutter",
+				"Riverpod",
+				"Google Speech",
+				"Codemagic"
+			],
 			"frontendTech": "Flutter Material shaped a clean, lesson-friendly interface, with Riverpod keeping state predictable across screens. A WebSocket connection streamed learners' voice recordings to the server and back in real time, powering a Google Speech-driven pronunciation feature that gave instant feedback on Korean pronunciation. Codemagic handled CI/CD end to end, automating builds and releases straight to the App Store and Google Play.",
 			"team": "3 people",
 			"role": "Mobile Developer",
@@ -61,7 +87,13 @@
 		{
 			"title": "NGK Spark Plug",
 			"description": "An internal inventory app for a Japanese client, tracking electronic components on a spark plug production line at a factory to reduce manual counting errors.",
-			"tech": ["Flutter", "Provider", "Sqflite", "Firebase Cloud Messaging", "Codemagic"],
+			"tech": [
+				"Flutter",
+				"Provider",
+				"Sqflite",
+				"Firebase Cloud Messaging",
+				"Codemagic"
+			],
 			"frontendTech": "Flutter Material kept the interface simple and functional for factory-floor use, with Provider managing state throughout the app. Sqflite gave the app offline-first local storage, so staff could keep counting components even through patchy factory Wi-Fi, while Firebase Cloud Messaging pushed real-time alerts the moment they were needed. Built strictly for internal use, the app shipped as Ad Hoc builds distributed through Codemagic rather than published to the public app stores.",
 			"team": "4 people",
 			"role": "Mobile Developer",

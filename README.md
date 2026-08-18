@@ -1,43 +1,72 @@
-# Astro Starter Kit: Minimal
+# Cam Huynh Phan — Portfolio
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Personal portfolio site built with [Astro](https://astro.build) and [Tailwind CSS v4](https://tailwindcss.com). A three-column dark-themed layout showcasing resume, certificates, skills, and projects.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+**Live site:** [camphan.netlify.app](https://camphan.netlify.app)
 
-## 🚀 Project Structure
+## Stack
 
-Inside of your Astro project, you'll see the following folders and files:
+- **[Astro](https://astro.build)** (v7) — static site framework, file-based routing
+- **Tailwind CSS v4** via `@tailwindcss/vite` — theme tokens defined in `src/styles/global.css`
+- **[astro-icon](https://github.com/natemoo-re/astro-icon)** + `@iconify-json/lucide` — icon system
+- **[AOS](https://michalsnik.github.io/aos/)** — scroll animations
+- **TypeScript** (strict)
+
+## Project structure
 
 ```text
 /
-├── public/
+├── public/                    # static assets (favicons, avatar, CV, etc.)
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/
+│   │   ├── sections/          # Hero, Resume, Certificates, Skills, Portfolio
+│   │   ├── PortfolioFrame.astro  # three-column app shell
+│   │   ├── Sidebar.astro      # left column — profile card
+│   │   └── SideNav.astro      # right column — icon nav
+│   ├── data/                  # *.json — all page copy, one file per section
+│   ├── layouts/
+│   │   └── Layout.astro       # HTML shell, meta tags, Open Graph/Twitter cards
+│   ├── pages/
+│   │   └── index.astro        # assembles sections into the page
+│   └── styles/
+│       └── global.css         # Tailwind v4 @theme tokens (colors, etc.)
+├── CONTENT_DRAFT.md           # free-text source of truth for copy, mirrored into src/data/*.json
+└── astro.config.mjs
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Design system
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Dark-only theme, colors defined as Tailwind v4 `@theme` tokens:
 
-Any static assets, like images, can be placed in the `public/` directory.
+| Token | Hex | Use |
+|---|---|---|
+| `canvas` | `#141414` | page background |
+| `panel` / `panel-2` | `#1a1a1a` / `#1f1f1f` | cards, avatar frame |
+| `line` | `#2b2b2b` | borders |
+| `accent` / `accent-ink` | `#2fe6a6` / `#0b0f0d` | highlight text, active nav, buttons |
+| `ink` / `muted` / `faint` | `#f5f5f5` / `#9a9a9a` / `#6b6b6b` | text hierarchy |
 
-## 🧞 Commands
+## Getting started
 
-All commands are run from the root of the project, from a terminal:
+```sh
+npm install
+npm run dev       # dev server at localhost:4321
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Commands
 
-## 👀 Want to learn more?
+| Command | Action |
+| :--- | :--- |
+| `npm run dev` | Start the dev server at `localhost:4321` |
+| `npm run build` | Build the production site to `./dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run astro ...` | Run any Astro CLI command, e.g. `astro check` |
+| `npm run stop` | Stop a background dev server |
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Editing content
+
+All page copy lives in `src/data/*.json`, one file per section. `CONTENT_DRAFT.md` is a free-text mirror of the same content and is treated as the source of truth — edit it first, then propagate the change into the matching JSON file(s).
+
+## Deployment
+
+The site is deployed to [Netlify](https://www.netlify.com) from the `main` branch.

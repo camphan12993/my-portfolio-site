@@ -11,30 +11,75 @@
 		{
 			"label": "Coding",
 			"items": [
-				{ "name": "HTML/CSS/JavaScript", "percent": 90 },
-				{ "name": "Angular", "percent": 90 },
-				{ "name": "Flutter", "percent": 80 },
-				{ "name": "Astro.js", "percent": 80 },
-				{ "name": "Next.js", "percent": 50 },
-				{ "name": "React", "percent": 55 },
-				{ "name": "Node.js", "percent": 45 }
+				{
+					"name": "HTML/CSS/JavaScript",
+					"level": "core",
+					"description": "The foundation underneath every project across the career — semantic markup, responsive layout with Flexbox/Grid, and vanilla JavaScript for DOM work and browser APIs, still reached for directly whenever a framework would be overkill."
+				},
+				{
+					"name": "Angular",
+					"level": "core",
+					"description": "Primary framework for enterprise applications — component architecture, RxJS, and state management with NgRx and NGXS. Used from Enouvo through Infostatus to lead front-end teams on real-time platforms like DTI and multi-client products like the Staff Management System."
+				},
+				{
+					"name": "Flutter",
+					"level": "core",
+					"description": "Built cross-platform mobile apps end to end — UI, state management with Riverpod and Provider, and native integrations like offline storage and push notifications — on client projects such as HallyuClass and NGK Spark Plug, through to App Store and Google Play release."
+				},
+				{
+					"name": "Astro.js",
+					"level": "core",
+					"description": "Used for building fast, static-first marketing sites straight from Figma designs — content-driven pages and Tailwind CSS integration — shipped for the Infostatus website and this portfolio."
+				},
+				{
+					"name": "Next.js",
+					"level": "familiar",
+					"description": "Comfortable with server-rendered React basics — routing, data fetching, and SSR/SSG — applied on smaller-scope or personal projects rather than production client work."
+				},
+				{
+					"name": "React",
+					"level": "familiar",
+					"description": "Component-based development with hooks and standard state patterns, used alongside Angular at Infostatus on select projects that called for a React front-end."
+				},
+				{
+					"name": "Node.js",
+					"level": "familiar",
+					"description": "Basic scripting and simple APIs, used only in personal projects to experiment with backend logic and build tooling — not part of client delivery work."
+				},
+				{ "name": "Firebase", "level": "others" },
+				{ "name": "AWS", "level": "others" },
+				{ "name": "Codemagic / CI-CD", "level": "others" }
+			]
+		},
+		{
+			"label": "AI Tools",
+			"items": [
+				{
+					"name": "Claude Code",
+					"description": "Daily driver for hands-on engineering work in the terminal — writing and refactoring code, debugging, running project-wide changes, and automating repetitive tasks like content updates and data syncing."
+				},
+				{
+					"name": "GitHub Copilot",
+					"description": "In-editor autocomplete used daily to move quickly through boilerplate and repetitive patterns, freeing up more time for architecture decisions and code review."
+				},
+				{
+					"name": "ChatGPT / Prompt Engineering",
+					"description": "Used for research, planning, and content writing — structuring prompts with clear context and constraints to get focused, usable output instead of generic answers, across tasks from technical research to copywriting."
+				}
 			]
 		},
 		{
 			"label": "Design",
-			"items": [
-				{ "name": "Figma", "percent": 80 },
-				{ "name": "Branding & Visual Design", "percent": 75 }
-			]
+			"items": [{ "name": "Figma" }, { "name": "Branding & Visual Design" }]
 		},
 		{
 			"label": "Soft Skill",
 			"items": [
-				{ "name": "Leadership", "percent": 80 },
-				{ "name": "Communication", "percent": 90 },
-				{ "name": "Teamwork", "percent": 90 },
-				{ "name": "Problem Solving", "percent": 85 },
-				{ "name": "English", "percent": 75 }
+				{ "name": "Leadership" },
+				{ "name": "Communication" },
+				{ "name": "Teamwork" },
+				{ "name": "Problem Solving" },
+				{ "name": "English" }
 			]
 		}
 	]

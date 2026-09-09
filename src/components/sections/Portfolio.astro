@@ -11,10 +11,28 @@ import portfolio from "../../data/portfolio.json";
     heading={portfolio.heading}
   />
 
-  <div class="mt-10 grid gap-6 sm:grid-cols-2">
+  <div class="mt-10 flex gap-2" data-portfolio-tabs>
+    <button
+      type="button"
+      data-category="development"
+      class="rounded-full px-5 py-2 text-sm font-semibold transition"
+    >
+      Development
+    </button>
+    <button
+      type="button"
+      data-category="design"
+      class="rounded-full px-5 py-2 text-sm font-semibold transition"
+    >
+      Design
+    </button>
+  </div>
+
+  <div class="mt-6 grid gap-6 sm:grid-cols-2" data-portfolio-grid>
     {
       portfolio.projects.map((project, i) => (
         <div
+          data-category={project.category}
           class="group block overflow-hidden rounded-2xl border border-line bg-panel/40 p-5 backdrop-blur-md backdrop-saturate-150"
           data-aos="fade-up"
           data-aos-delay={i * 100}
@@ -24,7 +42,20 @@ import portfolio from "../../data/portfolio.json";
               <Icon name={project.icon as any} class="h-7 w-7" />
             </div>
             <div class="min-w-0">
-              <p class="text-lg font-semibold text-ink">{project.title}</p>
+              <p class="flex items-center gap-1.5 text-lg font-semibold text-ink">
+                {project.title}
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    class="text-faint transition hover:text-accent"
+                    aria-label={`Visit ${project.title}`}
+                  >
+                    <Icon name="external-link" class="h-4 w-4" />
+                  </a>
+                )}
+              </p>
               <p class="mt-1 text-sm uppercase tracking-wide text-faint">
                 {project.role}
               </p>
@@ -39,7 +70,7 @@ import portfolio from "../../data/portfolio.json";
           </p>
           <div class="mt-4 border-t border-line pt-3">
             <p class="text-sm font-semibold uppercase tracking-wide text-white">
-              Tech
+              {project.category === "design" ? "Tools" : "Tech"}
             </p>
             {project.frontendTech && (
               <p class="mt-2 text-sm leading-relaxed text-muted">
@@ -67,3 +98,38 @@ import portfolio from "../../data/portfolio.json";
     }
   </div>
 </section>
+
+<script>
+  function initPortfolioTabs(section: Element) {
+    const tabs = section.querySelectorAll<HTMLButtonElement>(
+      "[data-portfolio-tabs] button"
+    );
+    const items = section.querySelectorAll<HTMLElement>(
+      "[data-portfolio-grid] > [data-category]"
+    );
+
+    function setActive(category: string) {
+      tabs.forEach((btn) => {
+        const isActive = btn.dataset.category === category;
+        btn.classList.toggle("bg-accent", isActive);
+        btn.classList.toggle("text-accent-ink", isActive);
+        btn.classList.toggle("border", !isActive);
+        btn.classList.toggle("border-line", !isActive);
+        btn.classList.toggle("text-muted", !isActive);
+      });
+      items.forEach((item) => {
+        item.classList.toggle("hidden", item.dataset.category !== category);
+      });
+    }
+
+    tabs.forEach((btn) => {
+      btn.addEventListener("click", () => setActive(btn.dataset.category!));
+    });
+
+    setActive(tabs[0]?.dataset.category ?? "development");
+  }
+
+  document
+    .querySelectorAll("section#portfolio")
+    .forEach((section) => initPortfolioTabs(section));
+</script>

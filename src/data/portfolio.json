@@ -10,6 +10,7 @@
 	"projects": [
 		{
 			"title": "DTI",
+			"category": "development",
 			"description": "A real-time monitoring and operations platform used by tram operators in Melbourne, Australia, tracking vehicle status, schedules, and incidents across the network.",
 			"tech": [
 				"Angular",
@@ -25,6 +26,7 @@
 		},
 		{
 			"title": "Staff Management System",
+			"category": "development",
 			"description": "An in-house HR management platform built by Enouvo — covering employee records, attendance, and payroll workflows — later packaged and resold as a configurable product to multiple external clients.",
 			"tech": [
 				"Angular",
@@ -40,6 +42,7 @@
 		},
 		{
 			"title": "Investor Zero",
+			"category": "development",
 			"description": "A startup platform helping first-time investors put together pitches and raise funding online, connecting founders with early-stage backers.",
 			"tech": [
 				"Angular",
@@ -56,6 +59,8 @@
 		},
 		{
 			"title": "PayLocker",
+			"link": "https://www.paylocker.com.au/",
+			"category": "development",
 			"description": "A startup platform built by Infostatus that connects contractors and homeowners to manage payments and construction progress with full transparency for both sides.",
 			"tech": [
 				"Angular",
@@ -71,6 +76,8 @@
 		},
 		{
 			"title": "HallyuClass",
+			"link": "https://hallyuclass.kr/",
+			"category": "development",
 			"description": "An online Korean-learning app for beginner-to-advanced learners, combining structured lessons, vocabulary practice, and progress tracking.",
 			"tech": [
 				"Flutter",
@@ -86,6 +93,7 @@
 		},
 		{
 			"title": "NGK Spark Plug",
+			"category": "development",
 			"description": "An internal inventory app for a Japanese client, tracking electronic components on a spark plug production line at a factory to reduce manual counting errors.",
 			"tech": [
 				"Flutter",
@@ -99,6 +107,67 @@
 			"role": "Mobile Developer",
 			"roleDescription": "Worked as part of a 4-person team embedded with a Japanese client, building the component-tracking app in Flutter against tight factory-floor requirements. Handled QA cycles directly with the client and coordinated release timing to the App Store and Google Play around production schedule constraints.",
 			"icon": "factory"
+		},
+		{
+			"title": "Infostatus Website",
+			"link": "https://infostatus.com.au/",
+			"category": "development",
+			"description": "The corporate website for Infostatus (infostatus.com.au), an Australian software consultancy — built end to end from Figma designs to a live production site.",
+			"tech": [
+				"Astro",
+				"Tailwind CSS",
+				"AWS Amplify",
+				"CloudFront",
+				"Route 53"
+			],
+			"frontendTech": "Astro paired with Tailwind CSS delivered a fast, static-first site built directly from Figma design specs, with every section translated into responsive, pixel-accurate components. Deployment ran through AWS Amplify, with CloudFront and Route 53 configured to serve the site through a CDN under the company's custom domain.",
+			"team": "Solo (1 person)",
+			"role": "Front-end Developer",
+			"roleDescription": "Owned the project end to end: converted the Figma designs into a fully responsive Astro site, and set up the AWS deployment pipeline, including the Amplify build, CloudFront distribution, and Route 53 DNS configuration for the custom domain.",
+			"icon": "globe"
+		},
+		{
+			"title": "Agntic",
+			"link": "https://agntic.ai/",
+			"category": "development",
+			"description": "An AI platform that lets users build and customize AI agents for their own purposes through a conversational interface, rather than technical configuration.",
+			"tech": [
+				"FlowiseAI",
+				"LLM Orchestration"
+			],
+			"frontendTech": "Built on top of FlowiseAI, an open-source low-code framework for orchestrating LLM workflows and agents, extended and customized to fit the product's agent-building and deployment flow.",
+			"team": "3 people",
+			"role": "Research & Founding Member",
+			"roleDescription": "Joined at the earliest stage of the project, researching the feasibility of building a no-code AI agent platform on top of FlowiseAI and helping shape the initial product direction and architecture as one of the founding members.",
+			"icon": "bot"
+		},
+		{
+			"title": "Infostatus Branding",
+			"link": "https://infostatus.com.au/",
+			"category": "design",
+			"description": "Brand identity for Infostatus (infostatus.com.au), an Australian software consultancy — logo and marketing banners designed to carry a consistent visual identity across the website and marketing materials.",
+			"tech": [
+				"Illustrator"
+			],
+			"frontendTech": "Designed the Infostatus logo and a set of marketing banners in Adobe Illustrator, translating the brand's visual identity into consistent, reusable assets later carried through to the company's website.",
+			"team": "Solo (1 person)",
+			"role": "Brand & Logo Designer",
+			"roleDescription": "Designed the Infostatus logo and related marketing banners, defining the visual identity that shaped the company's brand presence across its website and materials.",
+			"icon": "palette"
+		},
+		{
+			"title": "Agntic Branding",
+			"link": "https://agntic.ai/",
+			"category": "design",
+			"description": "Brand identity for Agntic (agntic.ai), an AI agent-building platform — logo and marketing banners designed to reflect the product's AI-forward positioning.",
+			"tech": [
+				"Illustrator"
+			],
+			"frontendTech": "Designed the Agntic logo and marketing banners in Adobe Illustrator, shaping a visual identity that reflected the product's AI-agent positioning across the site and marketing assets.",
+			"team": "Solo (1 person)",
+			"role": "Brand & Logo Designer",
+			"roleDescription": "Designed the Agntic logo and related marketing banners as part of the project's founding work, establishing the initial visual identity for the platform.",
+			"icon": "palette"
 		}
 	]
 }

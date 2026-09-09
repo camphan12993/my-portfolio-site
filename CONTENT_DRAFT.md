@@ -57,34 +57,54 @@ dedicated image field yet.
 - AWS Cloud Practitioner — Amazon Web Services — Link: (none yet)
 - TOEIC 760 — IIG — Link: (none yet)
 
-## 5. Skills (with proficiency %) — `src/data/skills.json`
+## 5. Skills — `src/data/skills.json`
+
+Skills render as chips, except Coding's Core/Familiar rows and AI Tools which render as cards
+(name + description) — their items carry a `description` field (no years-of-use badge). Coding is
+split into three level rows: `core` and `familiar` (cards, as above), and `others` — a flat chip
+row (name only, no description) for auxiliary tooling. Design and Soft Skill render as one flat
+chip list with no level distinction — their items carry only `name`.
 
 ### Coding
 
-- HTML/CSS/JavaScript — 90%
-- Angular — 90%
-- Flutter — 80%
-- Astro.js — 80%
-- Next.js — 50%
-- React — 55%
-- Node.js — 45%
+- HTML/CSS/JavaScript — Core — The foundation underneath every project across the career — semantic markup, responsive layout with Flexbox/Grid, and vanilla JavaScript for DOM work and browser APIs, still reached for directly whenever a framework would be overkill.
+- Angular — Core — Primary framework for enterprise applications — component architecture, RxJS, and state management with NgRx and NGXS. Used from Enouvo through Infostatus to lead front-end teams on real-time platforms like DTI and multi-client products like the Staff Management System.
+- Flutter — Core — Built cross-platform mobile apps end to end — UI, state management with Riverpod and Provider, and native integrations like offline storage and push notifications — on client projects such as HallyuClass and NGK Spark Plug, through to App Store and Google Play release.
+- Astro.js — Core — Used for building fast, static-first marketing sites straight from Figma designs — content-driven pages and Tailwind CSS integration — shipped for the Infostatus website and this portfolio.
+- Next.js — Familiar — Comfortable with server-rendered React basics — routing, data fetching, and SSR/SSG — applied on smaller-scope or personal projects rather than production client work.
+- React — Familiar — Component-based development with hooks and standard state patterns, used alongside Angular at Infostatus on select projects that called for a React front-end.
+- Node.js — Familiar — Basic scripting and simple APIs, used only in personal projects to experiment with backend logic and build tooling — not part of client delivery work.
+- Firebase — Others
+- AWS — Others
+- Codemagic / CI-CD — Others
+
+### AI Tools
+
+- Claude Code — Daily driver for hands-on engineering work in the terminal — writing and refactoring code, debugging, running project-wide changes, and automating repetitive tasks like content updates and data syncing.
+- GitHub Copilot — In-editor autocomplete used daily to move quickly through boilerplate and repetitive patterns, freeing up more time for architecture decisions and code review.
+- ChatGPT / Prompt Engineering — Used for research, planning, and content writing — structuring prompts with clear context and constraints to get focused, usable output instead of generic answers, across tasks from technical research to copywriting.
 
 ### Design
 
-- Figma — 80%
-- Branding & Visual Design — 75%
+- Figma
+- Branding & Visual Design
 
 ### Soft Skill
 
-- Leadership — 80%
-- Communication — 90%
-- Teamwork — 90%
-- Problem Solving — 85%
-- English — 75%
+- Leadership
+- Communication
+- Teamwork
+- Problem Solving
+- English
 
 ## 6. Portfolio (featured projects) — `src/data/portfolio.json`
 
+Each project has a `category` of either `development` or `design`. The section renders as two
+tabs ("Development" / "Design"); only one category's projects are visible at a time, defaulting
+to Development.
+
 - Project name: DTI
+  - Category: development
   - Description: A real-time monitoring and operations platform used by tram operators in Melbourne, Australia, tracking vehicle status, schedules, and incidents across the network.
   - Tech stack: Angular, Material, OpenStreetMap, NgRx
   - Angular formed the backbone of the app, styled with Angular Material for a clean, consistent interface. A WebSocket connection kept vehicle positions and incident data flowing in real time straight onto the map, which was built on OpenStreetMap and customized to match the product's visual language. NgRx tied it all together, keeping state predictable as data streamed in continuously from across the tram network.
@@ -93,6 +113,7 @@ dedicated image field yet.
   - Icon: tram-front
 
 - Project name: Staff Management System
+  - Category: development
   - Description: An in-house HR management platform built by Enouvo — covering employee records, attendance, and payroll workflows — later packaged and resold as a configurable product to multiple external clients.
   - Tech stack: Angular, CoreUI, Chart.js, NGXS
   - Angular paired with CoreUI gave the interface a clean, enterprise-ready feel across every client configuration. Chart.js brought the dashboards to life with attendance and payroll trends at a glance, while NGXS kept state management lean and predictable as the same codebase flexed to fit each client's needs.
@@ -101,6 +122,7 @@ dedicated image field yet.
   - Icon: users
 
 - Project name: Investor Zero
+  - Category: development
   - Description: A startup platform helping first-time investors put together pitches and raise funding online, connecting founders with early-stage backers.
   - Tech stack: Angular, PrimeNG, Angular Universal, NGXS, PDF.js
   - Angular and PrimeNG formed the foundation of the UI, fast to iterate on as product priorities shifted week to week. Angular Universal added server-side rendering for fast first loads and better SEO, NGXS kept state manageable through rapid MVP changes, and PDF.js powered in-browser document viewing and e-signatures — letting founders and backers review and sign pitch documents without ever leaving the app.
@@ -109,6 +131,8 @@ dedicated image field yet.
   - Icon: trending-up
 
 - Project name: PayLocker
+  - Category: development
+  - Link: https://www.paylocker.com.au/
   - Description: A startup platform built by Infostatus that connects contractors and homeowners to manage payments and construction progress with full transparency for both sides.
   - Tech stack: Angular, PrimeNG, Tailwind CSS, Sumsub SDK
   - Angular, PrimeNG, and Tailwind CSS combined to give contractors and homeowners an interface that felt clear and trustworthy at every step. State flowed through Angular services paired with signals for fine-grained reactivity, and the Sumsub SDK was woven in to handle KYB/KYC verification, keeping both sides of every transaction accountable.
@@ -117,6 +141,8 @@ dedicated image field yet.
   - Icon: hard-hat
 
 - Project name: HallyuClass
+  - Category: development
+  - Link: https://hallyuclass.kr/
   - Description: An online Korean-learning app for beginner-to-advanced learners, combining structured lessons, vocabulary practice, and progress tracking.
   - Tech stack: Flutter, Riverpod, Google Speech, Codemagic
   - Flutter Material shaped a clean, lesson-friendly interface, with Riverpod keeping state predictable across screens. A WebSocket connection streamed learners' voice recordings to the server and back in real time, powering a Google Speech-driven pronunciation feature that gave instant feedback on Korean pronunciation. Codemagic handled CI/CD end to end, automating builds and releases straight to the App Store and Google Play.
@@ -125,12 +151,53 @@ dedicated image field yet.
   - Icon: languages
 
 - Project name: NGK Spark Plug
+  - Category: development
   - Description: An internal inventory app for a Japanese client, tracking electronic components on a spark plug production line at a factory to reduce manual counting errors.
   - Tech stack: Flutter, Provider, Sqflite, Firebase Cloud Messaging, Codemagic
   - Flutter Material kept the interface simple and functional for factory-floor use, with Provider managing state throughout the app. Sqflite gave the app offline-first local storage, so staff could keep counting components even through patchy factory Wi-Fi, while Firebase Cloud Messaging pushed real-time alerts the moment they were needed. Built strictly for internal use, the app shipped as Ad Hoc builds distributed through Codemagic rather than published to the public app stores.
   - Team size: 4 people
   - Role: Mobile Developer — Worked as part of a 4-person team embedded with a Japanese client, building the component-tracking app in Flutter against tight factory-floor requirements. Handled QA cycles directly with the client and coordinated release timing to the App Store and Google Play around production schedule constraints.
   - Icon: factory
+
+- Project name: Infostatus Website
+  - Category: development
+  - Link: https://infostatus.com.au/
+  - Description: The corporate website for Infostatus (infostatus.com.au), an Australian software consultancy — built end to end from Figma designs to a live production site.
+  - Tech stack: Astro, Tailwind CSS, AWS Amplify, CloudFront, Route 53
+  - Astro paired with Tailwind CSS delivered a fast, static-first site built directly from Figma design specs, with every section translated into responsive, pixel-accurate components. Deployment ran through AWS Amplify, with CloudFront and Route 53 configured to serve the site through a CDN under the company's custom domain.
+  - Team size: Solo (1 person)
+  - Role: Front-end Developer — Owned the project end to end: converted the Figma designs into a fully responsive Astro site, and set up the AWS deployment pipeline, including the Amplify build, CloudFront distribution, and Route 53 DNS configuration for the custom domain.
+  - Icon: globe
+
+- Project name: Agntic
+  - Category: development
+  - Link: https://agntic.ai/
+  - Description: An AI platform that lets users build and customize AI agents for their own purposes through a conversational interface, rather than technical configuration.
+  - Tech stack: FlowiseAI, LLM Orchestration
+  - Built on top of FlowiseAI, an open-source low-code framework for orchestrating LLM workflows and agents, extended and customized to fit the product's agent-building and deployment flow.
+  - Team size: 3 people
+  - Role: Research & Founding Member — Joined at the earliest stage of the project, researching the feasibility of building a no-code AI agent platform on top of FlowiseAI and helping shape the initial product direction and architecture as one of the founding members.
+  - Icon: bot
+
+- Project name: Infostatus Branding
+  - Category: design
+  - Link: https://infostatus.com.au/
+  - Description: Brand identity for Infostatus (infostatus.com.au), an Australian software consultancy — logo and marketing banners designed to carry a consistent visual identity across the website and marketing materials.
+  - Tools: Illustrator
+  - Designed the Infostatus logo and a set of marketing banners in Adobe Illustrator, translating the brand's visual identity into consistent, reusable assets later carried through to the company's website.
+  - Team size: Solo (1 person)
+  - Role: Brand & Logo Designer — Designed the Infostatus logo and related marketing banners, defining the visual identity that shaped the company's brand presence across its website and materials.
+  - Icon: palette
+
+- Project name: Agntic Branding
+  - Category: design
+  - Link: https://agntic.ai/
+  - Description: Brand identity for Agntic (agntic.ai), an AI agent-building platform — logo and marketing banners designed to reflect the product's AI-forward positioning.
+  - Tools: Illustrator
+  - Designed the Agntic logo and marketing banners in Adobe Illustrator, shaping a visual identity that reflected the product's AI-agent positioning across the site and marketing assets.
+  - Team size: Solo (1 person)
+  - Role: Brand & Logo Designer — Designed the Agntic logo and related marketing banners as part of the project's founding work, establishing the initial visual identity for the platform.
+  - Icon: palette
 
 ## 7. Nav (right-side navigation menu) — `src/data/nav.json`
 

@@ -17,7 +17,7 @@ dedicated image field yet.
 
 - Name: Cam Huynh Phan
 - Initial (letter shown when there's no avatar): C
-- Title: Front-end Developer
+- Title: Front-end Developer & UI/UX Designer
 - Email: cam.phan12993@gmail.com
 - Location: Base in Da Nang, Vietnam
 - Copyright text: © 2026 Cam Huynh Phan. All Rights Reserved
@@ -30,8 +30,8 @@ dedicated image field yet.
 
 ## 2. Hero / Introduce (page opener) — `src/data/hero.json`
 
-- Greeting: "Say Hi from **Cam**, Front-end Developer"
-- Subtitle: I believe an interface should be felt, not just used — and I chase that feeling in every pixel, every interaction, and every screen I get to shape. For me, front-end development and design aren't separate disciplines; they're two sides of the same craft.
+- Greeting: "Say Hi from **Cam**, Front-end Developer & UI/UX Designer"
+- Subtitle: I design interfaces and then build them myself — from the first Figma frame to the last line of production code. Owning both sides means nothing gets lost in the handoff: what looks right in a design still holds up as a component, and what ships still feels the way it was meant to.
 - Stats:
   - "8+" — Years of experience
   - "20+" — Projects completed across 4+ countries

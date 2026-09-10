@@ -5,9 +5,9 @@
 	"heading": {
 		"prefix": "Say Hi from ",
 		"highlight": "Cam",
-		"suffix": ", Front-end Developer"
+		"suffix": ", Front-end Developer & UI/UX Designer"
 	},
-	"subtitle": "I believe an interface should be felt, not just used — and I chase that feeling in every pixel, every interaction, and every screen I get to shape. For me, front-end development and design aren't separate disciplines; they're two sides of the same craft.",
+	"subtitle": "I design interfaces and then build them myself — from the first Figma frame to the last line of production code. Owning both sides means nothing gets lost in the handoff: what looks right in a design still holds up as a component, and what ships still feels the way it was meant to.",
 	"stats": [
 		{ "value": "8+", "label": "Years of experience" },
 		{ "value": "20+", "label": "Projects completed across 4+ countries" }

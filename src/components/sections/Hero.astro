@@ -2,10 +2,13 @@
 import Icon from '../Icon.astro';
 import hero from '../../data/hero.json';
 
-const nowrapPhrase = 'Front-end Developer';
-const nowrapIndex = hero.heading.suffix.indexOf(nowrapPhrase);
-const suffixRest = nowrapIndex >= 0 ? hero.heading.suffix.slice(0, nowrapIndex) : hero.heading.suffix;
-const suffixNowrap = nowrapIndex >= 0 ? hero.heading.suffix.slice(nowrapIndex) : '';
+// Each role phrase stays on one line; the heading may wrap between them.
+const nowrapPhrases = ['Front-end Developer', 'UI/UX Designer'];
+const splitter = new RegExp(`(${nowrapPhrases.map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`);
+const suffixParts = hero.heading.suffix
+	.split(splitter)
+	.filter(Boolean)
+	.map((text) => ({ text, nowrap: nowrapPhrases.includes(text) }));
 ---
 
 <section id={hero.id} class="relative border-b border-line px-8 py-20 sm:px-12">
@@ -22,7 +25,7 @@ const suffixNowrap = nowrapIndex >= 0 ? hero.heading.suffix.slice(nowrapIndex) :
 		data-aos-delay="80"
 		data-typewriter
 	>
-		<span data-segment="prefix">{hero.heading.prefix}</span><span class="text-accent" data-segment="highlight">{hero.heading.highlight}</span><span data-segment="suffix">{suffixRest}</span><span class="whitespace-nowrap" data-segment="suffix-nowrap">{suffixNowrap}</span>
+		<span data-segment="prefix">{hero.heading.prefix}</span><span class="text-accent" data-segment="highlight">{hero.heading.highlight}</span>{suffixParts.map((part) => <span class={part.nowrap ? 'whitespace-nowrap' : undefined} data-segment="suffix">{part.text}</span>)}
 	</h1>
 
 	<p class="mt-6 max-w-2xl text-lg text-muted sm:text-xl" data-aos="fade-up" data-aos-delay="160">

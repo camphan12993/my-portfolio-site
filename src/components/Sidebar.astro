@@ -6,7 +6,9 @@ import profile from "../data/profile.json";
 <aside
   class="flex flex-col gap-4 p-6 lg:sticky lg:top-0 lg:overflow-y-auto lg:p-8"
 >
-  <div class="flex flex-1 flex-col rounded-3xl border border-line bg-panel/40 p-6 backdrop-blur-md backdrop-saturate-150">
+  <div
+    class="flex flex-1 flex-col rounded-3xl border border-line bg-panel/40 p-6 backdrop-blur-md backdrop-saturate-150"
+  >
     <div class="flex flex-col gap-1">
       <span class="text-lg font-semibold text-ink">{profile.name}</span>
       <p class="text-sm leading-snug text-muted">{profile.role}</p>
@@ -32,6 +34,8 @@ import profile from "../data/profile.json";
           <a
             href={s.href}
             aria-label={s.label}
+            target="_blank"
+            rel="noopener noreferrer"
             class="flex h-9 w-9 items-center justify-center rounded-full border border-line text-muted transition hover:border-accent hover:text-accent"
           >
             <Icon name={s.icon as any} class="h-4 w-4" />

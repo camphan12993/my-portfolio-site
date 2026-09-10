@@ -99,9 +99,10 @@ chip list with no level distinction — their items carry only `name`.
 
 ## 6. Portfolio (featured projects) — `src/data/portfolio.json`
 
-Each project has a `category` of either `development` or `design`. The section renders as two
-tabs ("Development" / "Design"); only one category's projects are visible at a time, defaulting
-to Development.
+Each project has a `category` of either `development` or `branding`. The section renders as two
+tabs ("Development" / "Branding"); only one category's projects are visible at a time, defaulting
+to Development. UI/UX design work isn't its own tab — it lives inside the development projects it
+belongs to, credited on their Role line (e.g. Investor Zero, PayLocker).
 
 - Project name: DTI
   - Category: development
@@ -180,7 +181,7 @@ to Development.
   - Icon: bot
 
 - Project name: Infostatus Branding
-  - Category: design
+  - Category: branding
   - Link: https://infostatus.com.au/
   - Description: Brand identity for Infostatus (infostatus.com.au), an Australian software consultancy — logo and marketing banners designed to carry a consistent visual identity across the website and marketing materials.
   - Tools: Illustrator
@@ -190,7 +191,7 @@ to Development.
   - Icon: palette
 
 - Project name: Agntic Branding
-  - Category: design
+  - Category: branding
   - Link: https://agntic.ai/
   - Description: Brand identity for Agntic (agntic.ai), an AI agent-building platform — logo and marketing banners designed to reflect the product's AI-forward positioning.
   - Tools: Illustrator
